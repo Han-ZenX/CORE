@@ -60,7 +60,6 @@ IO_L14P/N_T2_SRCC_<bank>
 | N18 / P19 | `IO_L13P/N_T2_MRCC_34` | Bank 34 的 MRCC 对 |
 | K17 / K18 | `IO_L12P/N_T1_MRCC_35` | Bank 35 的 MRCC 对,Zybo Z7-20 的 125 MHz 时钟即接 K17 |
 | H16 / H17 | `IO_L13P/N_T2_MRCC_35` | Bank 35 的 MRCC 对 |
-
 | U14 / U15 | `IO_L11P/N_T2_SRCC_34` | Bank 34 的 SRCC 对 |
 | N20 / P20 | `IO_L14P/N_T2_SRCC_34` | Bank 34 的 SRCC 对 |
 | L16 / L17 | `IO_L11P/N_T2_SRCC_35` | Bank 35 的 SRCC 对 |
