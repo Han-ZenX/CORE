@@ -10488,6 +10488,16 @@
 	)
 	(wire
 		(pts
+			(xy 87.63 330.2) (xy 96.52 330.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22376e63-f0f3-4546-99f7-2d28d36bcc57")
+	)
+	(wire
+		(pts
 			(xy 214.63 163.83) (xy 217.17 163.83)
 		)
 		(stroke
@@ -10878,7 +10888,7 @@
 	)
 	(polyline
 		(pts
-			(xy 247.65 213.36) (xy 388.62 213.36)
+			(xy 247.65 212.09) (xy 388.62 212.09)
 		)
 		(stroke
 			(width 0)
@@ -11125,6 +11135,16 @@
 			(type default)
 		)
 		(uuid "4a9c1fab-dd7c-404c-8498-3385d98ce14e")
+	)
+	(wire
+		(pts
+			(xy 189.23 378.46) (xy 201.93 378.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4aa5640d-c7fa-4b1e-81b7-ac1e416da964")
 	)
 	(wire
 		(pts
@@ -12238,6 +12258,16 @@
 	)
 	(wire
 		(pts
+			(xy 104.14 330.2) (xy 106.68 330.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89df039d-0aa8-4031-a36c-f6fc8921d1a7")
+	)
+	(wire
+		(pts
 			(xy 53.34 219.71) (xy 55.88 219.71)
 		)
 		(stroke
@@ -12338,7 +12368,7 @@
 	)
 	(polyline
 		(pts
-			(xy 388.62 213.36) (xy 388.62 287.02)
+			(xy 388.62 212.09) (xy 388.62 287.02)
 		)
 		(stroke
 			(width 0)
@@ -12355,6 +12385,16 @@
 			(type default)
 		)
 		(uuid "8fc53b1f-f8ce-4180-8b95-5c8542d657ca")
+	)
+	(wire
+		(pts
+			(xy 87.63 327.66) (xy 96.52 327.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8fe2dda6-9189-4147-b1f8-7ba85c28d226")
 	)
 	(wire
 		(pts
@@ -13578,6 +13618,16 @@
 	)
 	(wire
 		(pts
+			(xy 207.01 220.98) (xy 207.01 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ded75809-260b-4116-8abf-725c39dab5ee")
+	)
+	(wire
+		(pts
 			(xy 146.05 309.88) (xy 161.29 309.88)
 		)
 		(stroke
@@ -13618,7 +13668,7 @@
 	)
 	(polyline
 		(pts
-			(xy 247.65 213.36) (xy 247.65 287.02)
+			(xy 247.65 212.09) (xy 247.65 287.02)
 		)
 		(stroke
 			(width 0)
@@ -14055,6 +14105,16 @@
 			(type default)
 		)
 		(uuid "f53863b9-944a-4935-9619-ca05bfbeae9f")
+	)
+	(wire
+		(pts
+			(xy 104.14 327.66) (xy 106.68 327.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5aa5ad1-ad47-42ae-ae16-39ee3a79dc6d")
 	)
 	(polyline
 		(pts
@@ -14950,6 +15010,30 @@
 			)
 		)
 	)
+	(global_label "CLK_FS_P"
+		(shape input)
+		(at 44.45 279.4 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1d924b09-be5b-40b1-b3a4-81b699af1c3c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 32.3934 279.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "FPGA_TDI"
 		(shape output)
 		(at 354.33 314.96 0)
@@ -15131,6 +15215,30 @@
 		(uuid "2ec4bfd8-4670-4356-a297-a41daacc0a63")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 132.7234 307.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "CLK_FS_N"
+		(shape input)
+		(at 44.45 281.94 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2fd2142f-aad9-408d-a6d3-3b4affd56a7b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 32.3329 281.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15766,6 +15874,54 @@
 			)
 		)
 	)
+	(global_label "PS_I2C_SCL"
+		(shape bidirectional)
+		(at 207.01 228.6 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9430babf-8c14-402a-adb3-aa32f93837c9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 191.9069 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "PS_I2C_SDA"
+		(shape bidirectional)
+		(at 207.01 226.06 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "951d8fc9-ad7a-464a-8058-a88555cdac40")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 191.8464 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "FPGA_TCK"
 		(shape output)
 		(at 354.33 309.88 0)
@@ -15910,6 +16066,54 @@
 			)
 		)
 	)
+	(global_label "CLK1_FS_N"
+		(shape input)
+		(at 44.45 276.86 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a6b985b8-37cd-46ec-86ca-3842582cbeb4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 31.1234 276.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "CLK1_FS_P"
+		(shape input)
+		(at 44.45 274.32 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a920ace5-bacf-409d-9afa-ba32c4f314c6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 31.1839 274.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "PS_LED0"
 		(shape output)
 		(at 147.32 375.92 180)
@@ -15995,6 +16199,30 @@
 		(uuid "c716c4e0-f743-4c52-acf6-b68245491bf5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 118.7366 345.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "STATUS1"
+		(shape input)
+		(at 106.68 330.2 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c9aecbf8-2c0e-4ce3-8961-c702bb51a494")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 117.648 330.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16243,6 +16471,30 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(global_label "STATUS0"
+		(shape input)
+		(at 106.68 327.66 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "edea4c47-0d4a-48fc-a818-bda573e5c877")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 117.648 327.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 	)
@@ -18720,7 +18972,7 @@
 	)
 	(symbol
 		(lib_id "Connector:USB_C_Receptacle_USB2.0_16P")
-		(at 219.71 96.52 0)
+		(at 260.35 320.04 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18731,7 +18983,7 @@
 		(fields_autoplaced yes)
 		(uuid "33a2bf79-3dcb-4460-a756-e3648905aa5f")
 		(property "Reference" "J10"
-			(at 219.71 73.66 0)
+			(at 260.35 297.18 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18741,7 +18993,7 @@
 			)
 		)
 		(property "Value" "USB_C_Receptacle_USB2.0_16P"
-			(at 219.71 76.2 0)
+			(at 260.35 299.72 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18751,7 +19003,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 223.52 96.52 0)
+			(at 264.16 320.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18762,7 +19014,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
-			(at 223.52 96.52 0)
+			(at 264.16 320.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18773,7 +19025,7 @@
 			)
 		)
 		(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
-			(at 219.71 96.52 0)
+			(at 260.35 320.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22116,6 +22368,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 100.33 330.2 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7aef0033-1018-415c-82d0-c988860a59b6")
+		(property "Reference" "R35"
+			(at 95.25 328.93 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 104.14 328.93 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 100.33 331.978 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 100.33 330.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 100.33 330.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "409a8cf1-9eea-4eba-9b15-bda2863e7b36")
+		)
+		(pin "2"
+			(uuid "ed7dacf4-5184-4119-b88b-2f980095e205")
+		)
+		(instances
+			(project "CORE"
+				(path "/c7438a17-8217-4925-98df-f8ca6801320f"
+					(reference "R35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 110.49 86.36 0)
 		(unit 1)
@@ -24130,6 +24461,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 207.01 220.98 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ace5548f-186e-4a65-b4f3-453e3743f735")
+		(property "Reference" "#PWR046"
+			(at 207.01 214.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 207.01 215.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 207.01 220.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 207.01 220.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 207.01 220.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a41b8a38-a7c7-4ba1-b96c-8ed7f897d979")
+		)
+		(instances
+			(project "CORE"
+				(path "/c7438a17-8217-4925-98df-f8ca6801320f"
+					(reference "#PWR046")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 318.77 198.12 90)
 		(unit 1)
@@ -24958,6 +25368,85 @@
 			(project "CORE"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f"
 					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 100.33 327.66 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ba4f8c4a-7548-4cd7-b28c-b10ad9c8c3e8")
+		(property "Reference" "R34"
+			(at 95.25 326.39 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 104.14 326.39 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 100.33 329.438 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 100.33 327.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 100.33 327.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "31adf572-f82f-4e16-abd1-263444d9b452")
+		)
+		(pin "2"
+			(uuid "4589ca03-2b30-4487-a73b-f84cad12c842")
+		)
+		(instances
+			(project "CORE"
+				(path "/c7438a17-8217-4925-98df-f8ca6801320f"
+					(reference "R34")
 					(unit 1)
 				)
 			)
