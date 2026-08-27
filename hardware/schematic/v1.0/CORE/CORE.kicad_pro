@@ -661,7 +661,7 @@
         "uuid": "c7438a17-8217-4925-98df-f8ca6801320f"
       }
     ],
-    "used_designators": "U1-7,M1,GE_PS1,#PWR1-72,JTAG1,D1-6,BOOT_CFG1,R1-41,C1-23,J1-14",
+    "used_designators": "U1-7,M1,GE_PS1,#PWR1-73,JTAG1,D1-6,BOOT_CFG1,#FLG1-3,R1-41,C1-23,J1-16",
     "variants": []
   },
   "sheets": [

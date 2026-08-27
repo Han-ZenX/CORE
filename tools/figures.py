@@ -308,6 +308,237 @@ def layout():
     return d
 
 
+# ------------------------------------------------------- 图：原理图流程总览
+
+def sch_flow():
+    """原理图设计八阶段。"""
+    d = Drawing(W, 212)
+    stages = [
+        ('一', '工程与图纸准备', '新建工程 / 页面设置 / 图框', GREEN),
+        ('二', '符号库准备', '标准库 / 自建符号 / 库路径', AMBER),
+        ('三', '绘制电路', '放符号 / 连线 / 标签', ACCENT),
+        ('四', '层次化拆分', '按功能分图纸 / 层次标签', AMBER),
+        ('五', '批注位号', '分配唯一 R1 C2 U3', GREEN),
+        ('六', '分配封装', '与实际采购件对应', RED),
+        ('七', 'ERC 检查', '引脚冲突 / 未连接 / 电源', RED),
+        ('八', '输出', 'BOM / 网表 / 更新 PCB', GREEN),
+    ]
+    bw, bh, gx, gy = 218, 38, 24, 8
+    x0, y0 = 4, 212 - bh - 14
+    for i, (num, name, sub, col) in enumerate(stages):
+        cx = x0 + (i % 2) * (bw + gx)
+        cy = y0 - (i // 2) * (bh + gy)
+        _box(d, cx, cy, bw, bh, colors.white, col, 1.1, r=4)
+        d.add(Rect(cx, cy, 4, bh, fillColor=col, strokeColor=col))
+        _txt(d, cx + 12, cy + bh - 15, '阶段' + num, 8.5, BOLD, col)
+        _txt(d, cx + 52, cy + bh - 15, name, 9.5, BOLD, DARK)
+        _txt(d, cx + 12, cy + 8, sub, 7.5, FONT, GREY)
+        if i % 2 == 0:
+            _arrow(d, cx + bw + 3, cy + bh / 2, cx + bw + gx - 3, cy + bh / 2, GREY, .8)
+        elif i < len(stages) - 1:
+            _arrow(d, cx + bw / 2, cy - 1, cx + bw / 2, cy - gy + 1, GREY, .8)
+    _txt(d, 4, 10, '阶段六、七出错会直接导致板子报废或返工，是全流程的两个卡点',
+         8, BOLD, RED)
+    return d
+
+
+# ------------------------------------------------------- 图：六种连接方式
+
+def sch_connect():
+    """原理图中六种建立连接的方式对比。"""
+    d = Drawing(W, 268)
+    rows = [
+        ('导线 / Wire', 'W', '直接画线相连', '同一图纸内看得见的物理连接'),
+        ('结点 / Junction', 'J', '交叉处的实心圆点', '无圆点的交叉线不相连'),
+        ('网络标签 / Label', 'L', '同名 = 相连', '仅在本张图纸内生效'),
+        ('全局标签 / Global Label', 'Ctrl+L', '同名 = 相连', '跨所有图纸生效'),
+        ('层次标签 / Hier. Label', 'H', '对应父图纸的图纸引脚', '子图与父图的接口'),
+        ('电源符号 / Power', 'P', '同名 = 自动相连', 'GND、+3V3 等全局连通'),
+    ]
+    rh = 38
+    y = 268 - 24
+    for name, key, how, note in rows:
+        y -= rh
+        _box(d, 4, y, W - 8, rh - 4, colors.HexColor('#f8fafb'),
+             colors.HexColor('#d5dee7'), 0.6, r=3)
+        _txt(d, 12, y + rh - 18, name, 9, BOLD, ACCENT)
+        d.add(Rect(150, y + rh - 22, 34, 13, fillColor=colors.white,
+                   strokeColor=ACCENT, strokeWidth=0.8, rx=2, ry=2))
+        _txt(d, 167, y + rh - 18, key, 8, BOLD, ACCENT, 'middle')
+        _txt(d, 12, y + 8, how, 7.5, FONT, DARK)
+        _txt(d, 150, y + 8, note, 7.5, FONT, GREY)
+
+        # 右侧小示意
+        gx0, gy0 = 340, y + rh / 2 - 2
+        if name.startswith('导线'):
+            d.add(Line(gx0, gy0, gx0 + 60, gy0, strokeColor=GREEN, strokeWidth=1.4))
+            for xx in (gx0, gx0 + 60):
+                d.add(Rect(xx - 3, gy0 - 3, 6, 6, fillColor=DARK, strokeColor=DARK))
+        elif name.startswith('结点'):
+            d.add(Line(gx0, gy0, gx0 + 60, gy0, strokeColor=GREEN, strokeWidth=1.4))
+            d.add(Line(gx0 + 30, gy0 - 14, gx0 + 30, gy0 + 14, strokeColor=GREEN, strokeWidth=1.4))
+            d.add(Polygon([gx0 + 30, gy0 + 3.2, gx0 + 33.2, gy0, gx0 + 30, gy0 - 3.2,
+                           gx0 + 26.8, gy0], fillColor=DARK, strokeColor=DARK))
+        elif name.startswith('网络标签'):
+            for k, off in ((0, 0), (1, 76)):
+                d.add(Line(gx0 + off, gy0, gx0 + off + 26, gy0,
+                           strokeColor=GREEN, strokeWidth=1.4))
+                _txt(d, gx0 + off + 28, gy0 - 3, 'SDA', 7.5, BOLD, ACCENT)
+            _txt(d, gx0 + 56, gy0 + 8, '=', 9, BOLD, GREY)
+        elif name.startswith('全局标签'):
+            for off, lbl in ((0, '图纸 A'), (76, '图纸 B')):
+                d.add(Rect(gx0 + off, gy0 - 10, 52, 20, fillColor=colors.white,
+                           strokeColor=GREY, strokeWidth=0.5, rx=2, ry=2))
+                _txt(d, gx0 + off + 26, gy0 - 3, lbl, 7, FONT, GREY, 'middle')
+            _arrow(d, gx0 + 54, gy0, gx0 + 74, gy0, ACCENT, 1.0, 3.5)
+        elif name.startswith('层次标签'):
+            d.add(Rect(gx0, gy0 - 12, 56, 24, fillColor=colors.white,
+                       strokeColor=ACCENT, strokeWidth=0.9, rx=2, ry=2))
+            _txt(d, gx0 + 28, gy0 - 3, '父图纸', 7, FONT, ACCENT, 'middle')
+            d.add(Rect(gx0 + 54, gy0 - 3, 6, 6, fillColor=AMBER, strokeColor=AMBER))
+            _arrow(d, gx0 + 62, gy0, gx0 + 84, gy0, AMBER, 1.0, 3.5)
+            _txt(d, gx0 + 88, gy0 - 3, '子图', 7, FONT, AMBER)
+        else:
+            for off in (0, 60):
+                d.add(Line(gx0 + off + 12, gy0 + 10, gx0 + off + 12, gy0,
+                           strokeColor=GREEN, strokeWidth=1.4))
+                d.add(Line(gx0 + off + 4, gy0, gx0 + off + 20, gy0,
+                           strokeColor=GREEN, strokeWidth=1.6))
+                _txt(d, gx0 + off + 12, gy0 - 11, 'GND', 7, BOLD, ACCENT, 'middle')
+            _txt(d, gx0 + 40, gy0 + 2, '=', 9, BOLD, GREY)
+
+    _txt(d, 4, 8, '常见错误：交叉处漏放结点导致该连的没连；用网络标签跨图纸连接（不生效，'
+                  '需用全局标签）', 8, BOLD, RED)
+    return d
+
+
+# ------------------------------------------------------- 图：层次化结构
+
+def sch_hierarchy():
+    """层次化原理图的父子对应关系。"""
+    d = Drawing(W, 226)
+    # 顶层
+    tx, ty, tw, th = 90, 150, 300, 60
+    _box(d, tx, ty, tw, th, colors.HexColor('#eaf1f8'), ACCENT, 1.2, r=4)
+    _txt(d, tx + 8, ty + th - 15, '顶层图纸 / Root Sheet', 9, BOLD, ACCENT)
+    sheets = [('电源.kicad_sch', tx + 14), ('射频前端.kicad_sch', tx + 108),
+              ('接口.kicad_sch', tx + 214)]
+    pins = []
+    for name, sx in sheets:
+        d.add(Rect(sx, ty + 8, 78, 28, fillColor=colors.white,
+                   strokeColor=DARK, strokeWidth=0.8))
+        _txt(d, sx + 39, ty + 24, '图纸符号', 7, FONT, GREY, 'middle')
+        _txt(d, sx + 39, ty + 13, name.replace('.kicad_sch', ''), 7.5, BOLD, DARK, 'middle')
+        px, py = sx + 78, ty + 22
+        d.add(Rect(px - 3, py - 3, 6, 6, fillColor=AMBER, strokeColor=AMBER))
+        pins.append((px, py, sx + 39))
+    _txt(d, tx + tw + 8, ty + 22, '图纸引脚', 7.5, BOLD, AMBER)
+    _txt(d, tx + tw + 8, ty + 11, 'Sheet Pin', 7, FONT, GREY)
+
+    # 子图
+    cy = 44
+    for i, (name, sx) in enumerate(sheets):
+        cx = 24 + i * 152
+        _box(d, cx, cy, 132, 62, colors.HexColor('#fdf6e6'), AMBER, 1.0, r=4)
+        _txt(d, cx + 8, cy + 48, name.replace('.kicad_sch', '') + ' 子图', 8, BOLD, AMBER)
+        d.add(Rect(cx + 8, cy + 26, 6, 6, fillColor=AMBER, strokeColor=AMBER))
+        _txt(d, cx + 20, cy + 26, '层次标签 (H)', 7.5, FONT, DARK)
+        _txt(d, cx + 8, cy + 10, '名称必须与图纸引脚一致', 7, FONT, GREY)
+        _arrow(d, pins[i][2], ty - 2, cx + 66, cy + 64, ACCENT, 0.8, 3.5)
+
+    _txt(d, 4, 20, '层次标签 (H) 与父图纸上的图纸引脚 **同名即相连**，是子图对外的唯一接口。',
+         8, FONT, DARK)
+    _txt(d, 4, 8, '快捷键：S 放置图纸　|　Ctrl+H 层次导航　|　Alt+Back 离开图纸　|　'
+                  'PgUp / PgDn 翻页', 8, FONT, GREY)
+    return d
+
+
+# ------------------------------------------------------- 图：数据流
+
+def sch_dataflow():
+    """符号库 -> 原理图 -> 封装 -> PCB 的数据流。"""
+    d = Drawing(W, 168)
+    steps = [
+        ('符号库', '.kicad_sym', '引脚定义\n电气类型', ACCENT),
+        ('原理图', '.kicad_sch', '位号 Reference\n数值 Value\n封装 Footprint', GREEN),
+        ('封装库', '.pretty', '焊盘尺寸\n实际外形', AMBER),
+        ('PCB', '.kicad_pcb', '焊盘 + 飞线\n网络连接', RED),
+    ]
+    bw, gx = 104, 34
+    x = 8
+    y = 62
+    for i, (name, ext, items, col) in enumerate(steps):
+        _box(d, x, y, bw, 74, colors.white, col, 1.2, r=4)
+        d.add(Rect(x, y + 58, bw, 16, fillColor=col, strokeColor=col,
+                   rx=4, ry=4))
+        _txt(d, x + bw / 2, y + 63, name, 9, BOLD, colors.white, 'middle')
+        _txt(d, x + bw / 2, y + 46, ext, 7, FONT, GREY, 'middle')
+        for j, ln in enumerate(items.split('\n')):
+            _txt(d, x + 8, y + 32 - j * 11, ln, 7.5, FONT, DARK)
+        if i < len(steps) - 1:
+            _arrow(d, x + bw + 4, y + 37, x + bw + gx - 4, y + 37, ACCENT, 1.2, 4.5)
+        x += bw + gx
+
+    _txt(d, 118, 146, '分配封装', 7.5, BOLD, ACCENT)
+    _txt(d, 256, 146, '引用', 7.5, BOLD, ACCENT)
+    _txt(d, 388, 146, '从原理图更新 PCB', 7.5, BOLD, ACCENT)
+
+    _txt(d, 8, 40, '关键：原理图里的「封装」字段只是一个名字字符串，它必须能在封装库里找到对应项。',
+         8, FONT, DARK)
+    _txt(d, 8, 27, '符号的引脚数与封装的焊盘数必须一一对应，否则更新 PCB 时报错。',
+         8, FONT, DARK)
+    _txt(d, 8, 12, '常见错误：符号画 0402、实物买 0603；连接器封装引脚顺序镜像。',
+         8, BOLD, RED)
+    return d
+
+
+# ------------------------------------------------------- 图：ERC 引脚类型
+
+def sch_erc():
+    """ERC 引脚类型冲突矩阵（常见组合）。"""
+    d = Drawing(W, 224)
+    types = ['输出\nOutput', '输入\nInput', '双向\nBidir', '无源\nPassive',
+             '电源输入\nPwr In', '电源输出\nPwr Out']
+    # 0 = 正常, 1 = 警告, 2 = 错误
+    m = [
+        [2, 0, 0, 0, 0, 2],
+        [0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0],
+        [2, 0, 0, 0, 0, 2],
+    ]
+    cs, x0, y0 = 46, 96, 214 - 34
+    for j, t in enumerate(types):
+        for k, ln in enumerate(t.split('\n')):
+            _txt(d, x0 + j * cs + cs / 2, y0 + 6 - k * 9, ln,
+                 6.8, BOLD if k == 0 else FONT, DARK if k == 0 else GREY, 'middle')
+    y = y0 - 12
+    for i, t in enumerate(types):
+        y -= cs * 0.62
+        for k, ln in enumerate(t.split('\n')):
+            _txt(d, x0 - 6, y + 14 - k * 9, ln, 6.8,
+                 BOLD if k == 0 else FONT, DARK if k == 0 else GREY, 'end')
+        for j in range(len(types)):
+            v = m[i][j]
+            fill = {0: colors.HexColor('#e8f5ec'), 1: colors.HexColor('#fdf6e6'),
+                    2: colors.HexColor('#fdeaea')}[v]
+            edge = {0: GREEN, 1: AMBER, 2: RED}[v]
+            d.add(Rect(x0 + j * cs, y, cs - 3, cs * 0.62 - 3,
+                       fillColor=fill, strokeColor=edge, strokeWidth=0.7))
+            _txt(d, x0 + j * cs + (cs - 3) / 2, y + 8,
+                 {0: '✓', 1: '!', 2: '✕'}[v], 9, BOLD, edge, 'middle')
+
+    ly = 30
+    for i, (c, t) in enumerate(((GREEN, '✓ 正常'), (AMBER, '! 警告'), (RED, '✕ 错误'))):
+        _txt(d, 8 + i * 76, ly, t, 8, BOLD, c)
+    _txt(d, 8, 16, '两个输出引脚直接相连是硬错误（会短路）；电源输出对电源输出同理。',
+         8, FONT, DARK)
+    _txt(d, 8, 4, '电源网络必须有至少一个「电源输出」或 PWR_FLAG，否则报「电源未驱动」。',
+         8, BOLD, RED)
+    return d
+
+
 FIGURES = {
     'flow': flow,
     'stackup': stackup,
@@ -315,6 +546,11 @@ FIGURES = {
     'priority': priority,
     'refplane': refplane,
     'layout': layout,
+    'sch_flow': sch_flow,
+    'sch_connect': sch_connect,
+    'sch_hierarchy': sch_hierarchy,
+    'sch_dataflow': sch_dataflow,
+    'sch_erc': sch_erc,
 }
 
 
