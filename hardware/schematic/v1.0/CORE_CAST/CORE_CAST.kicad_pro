@@ -416,7 +416,7 @@
         "uuid": "0d815603-c3d2-48d0-adbd-b1b94f4ea034"
       }
     ],
-    "used_designators": "",
+    "used_designators": "J1-16,R1-23,R36-40,#FLG2-3,JTAG1,D1-6,#PWR1-5,#PWR7-38,#PWR41-45,#PWR47-59,#PWR68-73,BOOT_CFG1,C1-12,C15-19,GE_PS1,M1,U1-3,U5-6",
     "variants": []
   },
   "sheets": [
