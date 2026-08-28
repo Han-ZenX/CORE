@@ -648,7 +648,7 @@
         "uuid": "0d815603-c3d2-48d0-adbd-b1b94f4ea034"
       }
     ],
-    "used_designators": "J1-24,R1-23,R36-40,#FLG2-3,JTAG1,D1-6,#PWR1-82,BOOT_CFG1,C1-12,C15-19,GE_PS1,M1,U1-6",
+    "used_designators": "J1-24,R1-23,R36-40,#FLG2-3,JTAG1,D1-6,#PWR1-87,BOOT_CFG1,C1-12,C15-19,GE_PS1,M1,U1-6,RGB TFTLCD1",
     "variants": []
   },
   "sheets": [
