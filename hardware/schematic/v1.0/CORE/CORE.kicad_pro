@@ -688,6 +688,10 @@
     [
       "2f34e19c-e857-4703-b785-07db28ca5ce2",
       "Signal"
+    ],
+    [
+      "ed50b6be-780b-4dc6-b2ce-f6e75d9c68ad",
+      "Power"
     ]
   ],
   "text_variables": {},
