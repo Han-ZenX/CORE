@@ -657,17 +657,37 @@
     "top_level_sheets": [
       {
         "filename": "CORE.kicad_sch",
-        "name": "根目录",
+        "name": "CORE",
         "uuid": "c7438a17-8217-4925-98df-f8ca6801320f"
       }
     ],
-    "used_designators": "M1-2,U1-11,GE_PS1,D1-6,JTAG1,#PWR1-76,#PWR83-93,BOOT_CFG1,R1-42,#FLG1-3,C1-23,J1-16,J26,RGB TFTLCD1",
+    "used_designators": "M1-2,U1-11,GE_PS1,D1-6,JTAG1,#PWR1-76,#PWR83-95,BOOT_CFG1,R1-42,#FLG1-3,C1-23,J1-16,J26,RGB TFTLCD1",
     "variants": []
   },
   "sheets": [
     [
       "c7438a17-8217-4925-98df-f8ca6801320f",
-      "根目录"
+      "CORE"
+    ],
+    [
+      "dc06706b-2a1f-4563-9d3e-c912c4088a0d",
+      "ZynqCore"
+    ],
+    [
+      "1b8e51b9-1252-4123-a6f3-43015d792c26",
+      "Comm_Periph"
+    ],
+    [
+      "fdf79855-6d79-4c6b-a13f-b1d7a6b217b6",
+      "Storage"
+    ],
+    [
+      "f61d5a97-b8cb-48b7-b2d8-b1ec9597c5e7",
+      "Display"
+    ],
+    [
+      "2f34e19c-e857-4703-b785-07db28ca5ce2",
+      "Signal"
     ]
   ],
   "text_variables": {},
