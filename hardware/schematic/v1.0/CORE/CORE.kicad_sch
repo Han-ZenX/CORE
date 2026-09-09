@@ -1312,7 +1312,7 @@
 			)
 		)
 		(pin "PS_RXD" input
-			(at 172.72 68.58 0)
+			(at 163.83 53.34 90)
 			(uuid "5a161abc-1b2d-4c74-b8b8-3b1e0b66b48d")
 			(effects
 				(font
@@ -1322,7 +1322,7 @@
 			)
 		)
 		(pin "PS_TXD" output
-			(at 172.72 71.12 0)
+			(at 166.37 53.34 90)
 			(uuid "f5b4c118-d5d0-45e0-b056-964d1bbf27e7")
 			(effects
 				(font
@@ -2553,7 +2553,7 @@
 	)
 	(sheet
 		(at 116.84 19.05)
-		(size 48.26 19.05)
+		(size 54.61 19.05)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -2579,7 +2579,7 @@
 			)
 		)
 		(property "Sheetfile" "Storage.kicad_sch"
-			(at 165.6846 38.1 90)
+			(at 172.0346 38.1 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2712,6 +2712,26 @@
 		(pin "BOOT_MODE1" output
 			(at 123.19 38.1 270)
 			(uuid "b636a150-1c4a-4921-bdb1-082dd2044842")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PS_TXD" input
+			(at 166.37 38.1 270)
+			(uuid "2ba57133-cfa1-4cee-8bd1-2900e8b23437")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PS_RXD" output
+			(at 163.83 38.1 270)
+			(uuid "de9199df-8ca2-4b23-bda6-090bb9a18b47")
 			(effects
 				(font
 					(size 1.27 1.27)
