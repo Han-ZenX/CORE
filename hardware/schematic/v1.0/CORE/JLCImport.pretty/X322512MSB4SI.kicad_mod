@@ -1,0 +1,175 @@
+(footprint "X322512MSB4SI"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "-40℃~+85℃ 12MHz 20pF 80Ω Crystal Oscillator ±10ppm ±20ppm SMD3225-4P Crystals ROHS")
+	(tags "C9002 CRYSTAL-SMD_4P-L3.2-W2.5-BL X322512MSB4SI YXC Crystal Oscillators")
+	(property "Reference" "REF**"
+		(at 0 -2.678737 0)
+		(layer "F.SilkS")
+		(uuid "7d5fbb34-d32a-4f69-b25d-dd21e3a557a8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "~"
+		(at 0 2.907 0)
+		(layer "F.Fab")
+		(uuid "0f2b3909-f4c6-4a59-8bab-4044b6efbed9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2403291504_YXC-Crystal-Oscillators-X322512MSB4SI_C9002.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "863c4785-16d1-4de3-92c7-03334ba7ea5e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "-40℃~+85℃ 12MHz 20pF 80Ω Crystal Oscillator ±10ppm ±20ppm SMD3225-4P Crystals ROHS"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5613c2ae-6fa5-40ca-ac47-03f6a82a8238")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" "C9002"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f3b9798d-c986-4a7d-9a7a-2651ea68753a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -2.257196 0.25)
+		(end -2.257196 1.907)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1032fc00-d700-4148-944f-5f87f33cded1")
+	)
+	(fp_line
+		(start -2.257196 1.907)
+		(end -0.4 1.907)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "fcbd5bdd-28a3-474d-b671-cacad9f356d7")
+	)
+	(fp_line
+		(start -2.028596 -1.678737)
+		(end 2.028596 -1.678737)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c83036f5-f3ab-45b4-8116-2df61af9f950")
+	)
+	(fp_line
+		(start -2.028596 1.678483)
+		(end -2.028596 -1.678737)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1cb59c99-9d14-49da-9ab3-03756a56c3f4")
+	)
+	(fp_line
+		(start 2.028596 -1.678737)
+		(end 2.028596 1.678483)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5614dd5a-885e-45be-abec-377ddf98cef4")
+	)
+	(fp_line
+		(start 2.028596 1.678483)
+		(end -2.028596 1.678483)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4f0bdd9c-f89f-44d3-a9c6-3c55ffd3de42")
+	)
+	(fp_circle
+		(center -1.27 0.889127)
+		(end -1.143 0.889127)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "6f1af5dc-0b58-4d88-9c7c-d2f54cfe0abc")
+	)
+	(pad "1" smd rect
+		(at -1.1 0.85)
+		(size 1.4 1.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "b964917b-a95f-4e11-9943-4b3626fdf4fd")
+	)
+	(pad "2" smd rect
+		(at 1.1 0.85)
+		(size 1.4 1.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "c5485a8c-12e0-4d0d-b313-d9960d3d66ce")
+	)
+	(pad "3" smd rect
+		(at 1.1 -0.85)
+		(size 1.4 1.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "068be2c1-a60e-468c-97f9-39cc67a570f6")
+	)
+	(pad "4" smd rect
+		(at -1.1 -0.85)
+		(size 1.4 1.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "ffaed197-27bc-4e25-ac79-db465fdc6463")
+	)
+	(embedded_fonts no)
+	(model "F:/KiCad/Libs/footprints/JLCImport.3dshapes/X322512MSB4SI.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

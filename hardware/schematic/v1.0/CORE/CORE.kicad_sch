@@ -909,26 +909,6 @@
 				(justify left top)
 			)
 		)
-		(pin "PS_RXD" output
-			(at 189.23 68.58 180)
-			(uuid "f00f8fbd-4ea7-4610-8629-67f86180a1e0")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "PS_TXD" input
-			(at 189.23 71.12 180)
-			(uuid "ec82120c-ac6a-43c3-b1f0-9ccf63d583c0")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "PHY1_MDI3_P" bidirectional
 			(at 189.23 93.98 180)
 			(uuid "699300f6-7492-4d41-9dcc-76abda131b1b")

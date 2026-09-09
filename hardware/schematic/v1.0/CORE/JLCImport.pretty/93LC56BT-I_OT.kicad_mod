@@ -1,0 +1,158 @@
+(footprint "93LC56BT-I_OT"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "-40℃~+85℃ 1,000,000 cycles 2.5V~5.5V 200 Years 2Kbit 2MHz 6ms Hardware write protection function、Noise suppression function、Built-in power-on reset (POR) SPI SOT-23-6 EEPROM ROHS")
+	(tags "93LC56BT-I/OT C190271 Microchip Tech SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BR")
+	(property "Reference" "REF**"
+		(at 0 -2.55 0)
+		(layer "F.SilkS")
+		(uuid "bf730370-6431-4f7e-96c4-860c27461858")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "~"
+		(at 0 2.55016 0)
+		(layer "F.Fab")
+		(uuid "bde251a1-853f-4684-9af8-5877ee29643a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410311238_Microchip-Tech-93LC56BT-I-OT_C190271.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1e12df25-a68d-4b22-aead-8306dd71c459")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "-40℃~+85℃ 1,000,000 cycles 2.5V~5.5V 200 Years 2Kbit 2MHz 6ms Hardware write protection function、Noise suppression function、Built-in power-on reset (POR) SPI SOT-23-6 EEPROM ROHS"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7daec04b-e469-4f49-8a0b-88226403fa98")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" "C190271"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "55f8d0d3-688e-43ca-8ca9-deaeb39c7e19")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.9 -1.55)
+		(end 0.9 -1.55)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e82eeddc-6778-4e5a-98d6-773be4ba6da2")
+	)
+	(fp_line
+		(start -0.9 1.55)
+		(end 0.9 1.55)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b4d85cc3-a496-4596-b717-93786e869f1b")
+	)
+	(fp_circle
+		(center 1.397 1.651)
+		(end 1.524 1.651)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "38a042e4-7f0e-493a-b783-eed264e68bd4")
+	)
+	(fp_circle
+		(center 1.4 0.94996)
+		(end 1.5 0.94996)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "a3f3a3ee-f9e1-42c1-8e3d-96d9873da3c6")
+	)
+	(pad "1" smd rect
+		(at 1.35 0.94996)
+		(size 1.1 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "9abef158-6b27-4ee0-85ce-5a65f28dd295")
+	)
+	(pad "2" smd rect
+		(at 1.35 0)
+		(size 1.1 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "3bb57ba8-fd20-4d82-aeb8-f3615df4861b")
+	)
+	(pad "3" smd rect
+		(at 1.35 -0.94996)
+		(size 1.1 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "53ced122-1875-4a8a-b693-a168ddc5c332")
+	)
+	(pad "4" smd rect
+		(at -1.35 -0.94996)
+		(size 1.1 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "69f72896-4b39-4577-82f1-3e1f9191d26f")
+	)
+	(pad "5" smd rect
+		(at -1.35 0)
+		(size 1.1 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "e084cc88-fb4e-48a6-8867-79a4300f80bd")
+	)
+	(pad "6" smd rect
+		(at -1.35 0.94996)
+		(size 1.1 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "58803c4a-05a7-49d7-a0ca-d2f9d296f2c9")
+	)
+	(embedded_fonts no)
+	(model "F:/KiCad/Libs/footprints/JLCImport.3dshapes/93LC56BT-I_OT.wrl"
+		(offset
+			(xyz 0 0 0.049)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 -180)
+		)
+	)
+)
