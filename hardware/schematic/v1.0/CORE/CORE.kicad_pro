@@ -692,6 +692,10 @@
     [
       "ed50b6be-780b-4dc6-b2ce-f6e75d9c68ad",
       "Power"
+    ],
+    [
+      "80d75db9-26c1-4162-9120-13c21f81ce29",
+      "FMC_LPC"
     ]
   ],
   "text_variables": {},

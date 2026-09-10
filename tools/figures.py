@@ -565,3 +565,182 @@ def make(name, caption=''):
     else:
         out.append(Spacer(1, 8))
     return out
+
+
+# ================================================================ FT2232HL 系列
+
+def ft_arch():
+    """FT2232HL 双通道架构：一个 USB 口如何分出 JTAG 与 UART。"""
+    d = Drawing(W, 272)
+
+    _box(d, 2, 158, 58, 46, colors.HexColor('#eef3f8'), ACCENT, 1.0, r=4)
+    _txt(d, 31, 186, 'USB Type-C', 7.5, BOLD, ACCENT, 'middle')
+    _txt(d, 31, 175, 'D+ / D-', 7, FONT, GREY, 'middle')
+    _txt(d, 31, 164, 'CC 仅供电/方向', 6.5, FONT, GREY, 'middle')
+    _arrow(d, 60, 181, 84, 181, ACCENT, 1.1)
+
+    _box(d, 86, 96, 250, 160, colors.white, ACCENT, 1.2, r=5)
+    d.add(Rect(86, 236, 250, 20, fillColor=ACCENT, strokeColor=ACCENT))
+    _txt(d, 211, 242, 'FT2232HL   USB 复合设备   VID:PID = 0403:6010',
+         8, BOLD, colors.white, 'middle')
+
+    ch = [(172, 'Interface 0', 'Channel A', 'MPSSE 至 JTAG', 'ADBUS0-7 / ACBUS0-7', GREEN),
+          (110, 'Interface 1', 'Channel B', 'UART', 'BDBUS0-7 / BCBUS0-7', AMBER)]
+    for y, itf, name, mode, pins, col in ch:
+        _box(d, 96, y, 230, 52, colors.white, col, 1.0, r=4)
+        d.add(Rect(96, y, 4, 52, fillColor=col, strokeColor=col))
+        _txt(d, 108, y + 37, name, 9.5, BOLD, DARK)
+        _txt(d, 108, y + 22, itf, 7.5, FONT, GREY)
+        _txt(d, 108, y + 8, mode, 8.5, BOLD, col)
+        _arrow(d, 328, y + 26, 356, y + 26, col, 1.0)
+        _box(d, 358, y + 8, 122, 36, colors.HexColor('#fafbfc'), col, 0.8, r=3)
+        _txt(d, 419, y + 26, pins, 7, BOLD, DARK, 'middle')
+        _txt(d, 419, y + 14, '目标板调试口', 6.5, FONT, GREY, 'middle')
+
+    _txt(d, 211, 100, '两通道完全独立，同时工作，无需切换', 7.5, BOLD, ACCENT, 'middle')
+
+    d.add(Line(4, 82, W - 4, 82, strokeColor=colors.HexColor('#d5dee7'), strokeWidth=0.6))
+    _txt(d, 4, 68, '主机端枚举结果（EEPROM 按建议配置后）', 8.5, BOLD, DARK)
+    rows = [(GREEN, 'Channel A', 'D2XX 驱动', '不产生 COM 口，OpenOCD / flashrom 独占'),
+            (AMBER, 'Channel B', 'VCP 驱动', 'Windows: COM 口　Linux: /dev/ttyUSB0')]
+    for i, (col, a, b, c) in enumerate(rows):
+        y = 46 - i * 22
+        d.add(Rect(4, y - 2, 4, 16, fillColor=col, strokeColor=col))
+        _txt(d, 16, y + 2, a, 8, BOLD, col)
+        _txt(d, 78, y + 2, b, 8, BOLD, DARK)
+        _txt(d, 150, y + 2, c, 8, FONT, GREY)
+    _txt(d, 4, 2, '识别靠 USB Interface 号，与 Type-C 接口本身无关；A 恒为 Interface 0。',
+         7.5, BOLD, RED)
+    return d
+
+
+def ft_pinmux():
+    """同一组数据引脚在四种模式下的功能对照。"""
+    d = Drawing(W, 236)
+    cols = [('UART', AMBER), ('MPSSE / JTAG', GREEN), ('MPSSE / SPI', GREEN),
+            ('MPSSE / I2C', RED)]
+    rows = [('xD0', ['TXD', 'TCK', 'SCK', 'SCL'], True),
+            ('xD1', ['RXD', 'TDI', 'MOSI', 'SDA (out)'], True),
+            ('xD2', ['RTS#', 'TDO', 'MISO', 'SDA (in)'], True),
+            ('xD3', ['CTS#', 'TMS', 'CS#', '—'], True),
+            ('xD4-7', ['DTR#/DSR#/DCD#/RI#', 'GPIOL0-3', 'GPIOL0-3', 'GPIOL0-3'], False),
+            ('xCBUS0-7', ['—', 'GPIOH0-7', 'GPIOH0-7', 'GPIOH0-7'], False)]
+
+    lx, cw, rh = 66, 103, 26
+    top = 236 - 30
+    for j, (name, col) in enumerate(cols):
+        x = lx + j * cw
+        d.add(Rect(x, top, cw - 4, 20, fillColor=col, strokeColor=col))
+        _txt(d, x + (cw - 4) / 2, top + 6, name, 7.5, BOLD, colors.white, 'middle')
+
+    for i, (pin, vals, mux) in enumerate(rows):
+        y = top - (i + 1) * rh - 4
+        _txt(d, lx - 8, y + 9, pin, 8, BOLD, DARK, 'end')
+        for j, v in enumerate(vals):
+            x = lx + j * cw
+            fill = colors.HexColor('#fdf6e6') if mux else colors.HexColor('#f2f4f6')
+            edge = cols[j][1] if mux else colors.HexColor('#c3ccd4')
+            d.add(Rect(x, y, cw - 4, rh - 5, fillColor=fill, strokeColor=edge,
+                       strokeWidth=0.8 if mux else 0.5))
+            _txt(d, x + (cw - 4) / 2, y + 8, v, 7.5 if len(v) < 14 else 6.3,
+                 BOLD if mux else FONT, DARK if mux else GREY, 'middle')
+
+    ky = top - 4 * rh - 8
+    d.add(Rect(lx - 3, ky - 1, 4 * cw - 1, 4 * rh + 1, fillColor=None,
+               strokeColor=RED, strokeWidth=1.2))
+    _txt(d, 4, 14, 'xD0-xD3 是复用冲突区：同一通道换模式，外部走线也必须跟着换。',
+         8, BOLD, RED)
+    _txt(d, 4, 2, 'x 代表 A（Channel A）或 B（Channel B）。xD4-7 与 xCBUS 在 MPSSE 下恒为 GPIO。',
+         7.5, FONT, GREY)
+    return d
+
+
+def ft_i2c():
+    """MPSSE 做 I2C 时的外部接线要求。"""
+    d = Drawing(W, 198)
+    _box(d, 4, 46, 104, 110, colors.white, ACCENT, 1.1, r=4)
+    _txt(d, 56, 138, 'FT2232HL', 9, BOLD, ACCENT, 'middle')
+    _txt(d, 56, 126, 'MPSSE', 7.5, FONT, GREY, 'middle')
+
+    for y, p, f in ((108, 'AD0', 'SCL'), (86, 'AD1', 'DO'), (64, 'AD2', 'DI')):
+        _txt(d, 100, y - 3, p, 7.5, BOLD, DARK, 'end')
+        _txt(d, 112, y + 5, f, 6.5, FONT, GREY)
+
+    d.add(Line(108, 108, 400, 108, strokeColor=DARK, strokeWidth=1.0))
+    d.add(Line(108, 86, 196, 86, strokeColor=RED, strokeWidth=1.4))
+    d.add(Line(108, 64, 196, 64, strokeColor=RED, strokeWidth=1.4))
+    d.add(Line(196, 64, 196, 86, strokeColor=RED, strokeWidth=1.4))
+    d.add(Line(196, 75, 400, 75, strokeColor=DARK, strokeWidth=1.0))
+    for yy in (64, 86, 75):
+        d.add(Polygon([196, yy, 192, yy - 2.8, 192, yy + 2.8],
+                      fillColor=RED, strokeColor=RED))
+    _txt(d, 202, 92, '外部短接后才是 SDA', 8, BOLD, RED)
+    _txt(d, 202, 52, 'MPSSE 输入输出物理分离，', 7, FONT, GREY)
+    _txt(d, 202, 42, '不短接读不到 ACK', 7, BOLD, RED)
+
+    d.add(Line(300, 108, 300, 182, strokeColor=DARK, strokeWidth=1.0))
+    d.add(Line(340, 75, 340, 182, strokeColor=DARK, strokeWidth=1.0))
+    d.add(Line(276, 182, 364, 182, strokeColor=RED, strokeWidth=1.4))
+    _txt(d, 370, 179, '3V3', 8, BOLD, RED)
+    for x in (300, 340):
+        d.add(Rect(x - 6, 132, 12, 22, fillColor=colors.white,
+                   strokeColor=DARK, strokeWidth=0.9))
+    _txt(d, 292, 143, '2.2k 至 4.7k 上拉', 7.5, BOLD, DARK, 'end')
+    _txt(d, 294, 116, 'SCL', 7, FONT, GREY, 'end')
+    _txt(d, 334, 82, 'SDA', 7, FONT, GREY, 'end')
+
+    _box(d, 402, 58, 76, 68, colors.HexColor('#f2f4f6'),
+         colors.HexColor('#94a7b8'), 0.8, r=3)
+    _txt(d, 440, 102, 'I2C 从设备', 8, BOLD, DARK, 'middle')
+    _txt(d, 440, 88, 'EEPROM /', 7, FONT, GREY, 'middle')
+    _txt(d, 440, 78, '传感器', 7, FONT, GREY, 'middle')
+
+    _txt(d, 4, 24, 'MPSSE 引脚不是真开漏，靠固件切输入态模拟高阻，上拉电阻必须外接。',
+         8, BOLD, RED)
+    _txt(d, 4, 12, '速率上限约 400 kHz（Fast mode），够用于配置类操作，不适合高速采集。',
+         7.5, FONT, GREY)
+    return d
+
+
+def ft_eeprom():
+    """93LC56B 配置 EEPROM 的接法与救砖点。"""
+    d = Drawing(W, 194)
+    _box(d, 4, 62, 118, 114, colors.white, ACCENT, 1.1, r=4)
+    _txt(d, 63, 160, 'FT2232HL', 9, BOLD, ACCENT, 'middle')
+
+    _box(d, 300, 62, 128, 114, colors.white, colors.HexColor('#7d8f9e'), 1.1, r=4)
+    _txt(d, 364, 160, '93LC56BT-I/OT', 9, BOLD, DARK, 'middle')
+    _txt(d, 364, 148, '2 Kbit　128 x 16　SOT-23-6', 7, FONT, GREY, 'middle')
+
+    for y, l, r in ((132, 'EECS', 'CS'), (112, 'EECLK', 'CLK'), (92, 'EEDATA', 'DI')):
+        _txt(d, 116, y - 3, l, 7.5, BOLD, DARK, 'end')
+        _txt(d, 306, y - 3, r, 7.5, BOLD, DARK)
+        d.add(Line(122, y, 300, y, strokeColor=ACCENT, strokeWidth=1.0))
+
+    d.add(Line(122, 92, 122, 76, strokeColor=RED, strokeWidth=1.2))
+    d.add(Line(122, 76, 190, 76, strokeColor=RED, strokeWidth=1.2))
+    d.add(Rect(190, 69, 30, 14, fillColor=colors.white, strokeColor=RED, strokeWidth=1.1))
+    _txt(d, 205, 57, '2.2k', 7.5, BOLD, RED, 'middle')
+    d.add(Line(220, 76, 300, 76, strokeColor=RED, strokeWidth=1.2))
+    _txt(d, 306, 73, 'DO', 7.5, BOLD, DARK)
+
+    d.add(Polygon([250, 132, 245, 140, 255, 140], fillColor=AMBER, strokeColor=AMBER))
+    d.add(Line(250, 140, 250, 152, strokeColor=AMBER, strokeWidth=1.1))
+    d.add(Rect(243, 152, 14, 10, fillColor=colors.white, strokeColor=AMBER, strokeWidth=1.0))
+    _txt(d, 262, 154, 'TP', 7.5, BOLD, AMBER)
+
+    notes = [(44, RED, BOLD, '必须串 2.2k 电阻：DI/DO 合并成一根线，防双向驱动冲突。'),
+             (32, AMBER, BOLD, 'TP 为救砖测试点：短接到 GND 可让芯片忽略 EEPROM，回退默认值重新枚举。'),
+             (20, RED, BOLD, '必须用 B 版（x16 组织）。93LC56A 是 x8 组织，FT2232H 读不了。'),
+             (8, GREY, FONT, '出厂空白（全 0xFF）时芯片回退片内默认值照常枚举，可直接用 FT_PROG 烧录。')]
+    for y, col, fnt, txt in notes:
+        _txt(d, 4, y, txt, 8 if fnt is BOLD else 7.5, fnt, col)
+    return d
+
+
+FIGURES.update({
+    'ft_arch': ft_arch,
+    'ft_pinmux': ft_pinmux,
+    'ft_i2c': ft_i2c,
+    'ft_eeprom': ft_eeprom,
+})
