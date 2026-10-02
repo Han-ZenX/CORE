@@ -9623,7 +9623,7 @@
 		(uuid "3cdb7e94-155d-475e-b298-604acff43543")
 	)
 	(hierarchical_label "PHY1_MDI1_N"
-		(shape output)
+		(shape bidirectional)
 		(at 214.63 41.91 0)
 		(effects
 			(font
