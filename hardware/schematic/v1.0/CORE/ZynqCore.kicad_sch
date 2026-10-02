@@ -9525,7 +9525,7 @@
 	)
 	(hierarchical_label "CLK2_FX_N"
 		(shape input)
-		(at 270.51 64.77 180)
+		(at 270.51 62.23 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10042,7 +10042,7 @@
 	)
 	(hierarchical_label "CLK2_FX_P"
 		(shape input)
-		(at 270.51 67.31 180)
+		(at 270.51 64.77 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10207,7 +10207,7 @@
 	)
 	(hierarchical_label "CLK3_FX_N"
 		(shape input)
-		(at 270.51 71.12 180)
+		(at 270.51 69.85 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10273,7 +10273,7 @@
 	)
 	(hierarchical_label "CLK3_FX_P"
 		(shape input)
-		(at 270.51 73.66 180)
+		(at 270.51 72.39 180)
 		(effects
 			(font
 				(size 1.27 1.27)
