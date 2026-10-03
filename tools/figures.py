@@ -8,7 +8,7 @@ md2pdf.py 的配套绘图模块：为硬件文档生成矢量示意图。
 纯 reportlab.graphics 矢量绘制，不依赖外部图片文件。
 """
 
-from reportlab.graphics.shapes import Drawing, Line, PolyLine, Polygon, Rect, String
+from reportlab.graphics.shapes import Drawing, Group, Line, PolyLine, Polygon, Rect, String
 from reportlab.lib import colors
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.units import mm
@@ -743,4 +743,112 @@ FIGURES.update({
     'ft_pinmux': ft_pinmux,
     'ft_i2c': ft_i2c,
     'ft_eeprom': ft_eeprom,
+})
+
+
+# ================================================================ Power 电源系列
+
+def _pwbox(d, x, y, w, h, title, sub='', col=ACCENT, fill=colors.white):
+    _box(d, x, y, w, h, fill, col, 1.0, r=4)
+    _txt(d, x + w / 2, y + h / 2 + (2 if sub else -3), title, 8, BOLD, DARK, 'middle')
+    if sub:
+        _txt(d, x + w / 2, y + h / 2 - 9, sub, 6.5, FONT, GREY, 'middle')
+
+
+def _tag(d, x, y, n, col=RED):
+    d.add(Rect(x - 7, y - 7, 14, 14, rx=7, ry=7, fillColor=col, strokeColor=col))
+    _txt(d, x, y - 3, str(n), 7.5, BOLD, colors.white, 'middle')
+
+
+def pw_now():
+    """当前 Power 页网络现状：电源名不一致导致核心板无供电。"""
+    d = Drawing(W, 250)
+    # 主路径
+    _pwbox(d, 4, 176, 78, 40, 'J10 USB-C', 'CC 5.1k 下拉')
+    _arrow(d, 82, 196, 112, 196, ACCENT, 1.1)
+    _txt(d, 97, 202, '+VBUS_5V', 6.5, BOLD, ACCENT, 'middle')
+    _pwbox(d, 114, 176, 84, 40, 'TPS78633', 'LDO  SOT-223', AMBER)
+    _arrow(d, 198, 196, 228, 196, ACCENT, 1.1)
+    _txt(d, 213, 202, '+3.3V', 6.5, BOLD, ACCENT, 'middle')
+    _pwbox(d, 230, 176, 84, 40, 'AMS1117-1.8', '3.3V 降 1.8V', AMBER)
+    _arrow(d, 314, 196, 344, 196, ACCENT, 1.1)
+    _txt(d, 329, 202, '+1.8V', 6.5, BOLD, ACCENT, 'middle')
+    _pwbox(d, 346, 176, 132, 40, 'FT2232H / TXS02612', '1.8V 负载（待确认）', GREY)
+    _tag(d, 88, 222, 3, AMBER); _tag(d, 156, 222, 4, AMBER); _tag(d, 272, 222, 9, AMBER)
+
+    # 断开的 +5V
+    d.add(Line(97, 176, 97, 142, strokeColor=RED, strokeWidth=1.1, strokeDashArray=[3, 2]))
+    d.add(Line(91, 156, 103, 144, strokeColor=RED, strokeWidth=1.6))
+    d.add(Line(91, 144, 103, 156, strokeColor=RED, strokeWidth=1.6))
+    _txt(d, 108, 152, '网络名不同，不连通', 7.5, BOLD, RED)
+    _pwbox(d, 4, 96, 150, 40, 'ZynqCore 核心板', '+5V 输入（无来源）', RED, colors.HexColor('#fdf0ee'))
+    _pwbox(d, 166, 96, 150, 40, 'Comm_Periph', '+5V（无来源）', RED, colors.HexColor('#fdf0ee'))
+    _tag(d, 10, 140, 1)
+
+    # USB D± 悬空
+    _tag(d, 236, 155, 2)
+    _txt(d, 246, 152, 'J10 的 USB_D+ / USB_D- 为本地标签，未接任何器件', 7, BOLD, RED)
+    _pwbox(d, 346, 96, 132, 40, 'J12 USB-C (Storage)', '独立网络 +VBUS', GREY)
+
+    d.add(Line(4, 82, W - 4, 82, strokeColor=colors.HexColor('#d5dee7'), strokeWidth=0.6))
+    rows = [(RED, '1', '+VBUS_5V 与 +5V 名称不同：核心板、Comm_Periph 均无 5V 供电'),
+            (RED, '2', 'J10 的 D+/D- 没有去向，ERC 会报未连接'),
+            (AMBER, '3', 'Rd=5.1k 只能拿到 USB 默认电流（电脑口 500 mA）'),
+            (AMBER, '4', 'TPS78633 压差 1.7 V，0.8 A 时耗散约 1.4 W'),
+            (AMBER, '9', 'AMS1117 压差余量仅 0.2~0.4 V，且 1.8V 可能可省')]
+    for i, (c, n, t) in enumerate(rows):
+        y = 66 - i * 14
+        _tag(d, 10, y + 3, n, c)
+        _txt(d, 22, y, t, 7.5, BOLD if c == RED else FONT, c if c == RED else DARK)
+    return d
+
+
+def pw_fix():
+    """建议的电源路径。"""
+    g = Group()
+    d = g
+    # 两路输入
+    _pwbox(d, 4, 206, 70, 36, 'DC 圆座', '5V / 3A 主电源')
+    _pwbox(d, 4, 152, 70, 36, 'J10 USB-C', 'CC 5.1k')
+    for y in (224, 170):
+        _arrow(d, 74, y, 92, y, ACCENT, 1.0)
+        _pwbox(d, 94, y - 14, 44, 28, 'PPTC', '2A', GREEN)
+        _arrow(d, 138, y, 154, y, ACCENT, 1.0)
+        _pwbox(d, 156, y - 14, 50, 28, '肖特基', '或理想二极管', GREEN)
+        d.add(Line(206, y, 222, y, strokeColor=ACCENT, strokeWidth=1.0))
+        # TVS 到地
+        d.add(Line(147, y, 147, y - 24, strokeColor=GREEN, strokeWidth=0.9))
+        d.add(Rect(141, y - 34, 12, 10, fillColor=colors.white, strokeColor=GREEN, strokeWidth=0.9))
+        _txt(d, 156, y - 32, 'TVS', 6.5, BOLD, GREEN)
+    d.add(Line(222, 224, 222, 170, strokeColor=ACCENT, strokeWidth=1.0))
+    _txt(d, 4, 106, 'TVS：SMBJ5.0A，放在 PPTC 之后，击穿短路时由 PPTC 断开', 6.8, FONT, GREY)
+
+    _arrow(d, 222, 197, 240, 197, ACCENT, 1.1)
+    _pwbox(d, 242, 180, 72, 34, '负载开关', 'TPS22918 / 拨动', GREEN)
+    _arrow(d, 314, 197, 334, 197, ACCENT, 1.2)
+    # +5V 母线
+    d.add(Line(336, 250, 336, 110, strokeColor=RED, strokeWidth=2.2))
+    _txt(d, 336, 255, '+5V 母线（统一网络名）', 8, BOLD, RED, 'middle')
+    _txt(d, 322, 168, '10uF', 6.5, BOLD, AMBER, 'end')
+    _txt(d, 322, 160, '限值', 6.5, FONT, GREY, 'end')
+
+    for y, t, s, col in ((222, 'ZynqCore 核心板', '+5V 输入', ACCENT),
+                         (178, 'Buck 3.3V', 'TPS62130 / SY8089', GREEN),
+                         (124, 'Comm_Periph', '+5V 外设', ACCENT)):
+        _arrow(d, 336, y, 356, y, ACCENT, 1.0)
+        _pwbox(d, 358, y - 16, 120, 32, t, s, col)
+    _arrow(d, 418, 162, 418, 148, ACCENT, 1.0)
+    _txt(d, 424, 152, '+3.3V', 6.5, BOLD, ACCENT)
+    _pwbox(d, 242, 116, 72, 34, '电源指示灯', 'LED + 限流电阻', GREY)
+    d.add(Line(314, 133, 336, 133, strokeColor=GREY, strokeWidth=0.8))
+
+    out = Drawing(W, 166)
+    g.transform = (1, 0, 0, 1, 0, -102)
+    out.add(g)
+    return out
+
+
+FIGURES.update({
+    'pw_now': pw_now,
+    'pw_fix': pw_fix,
 })
