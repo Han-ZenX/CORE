@@ -4499,9 +4499,9 @@
 		)
 		(uuid "587cb240-1fef-4257-a470-cc1973a64dc1")
 	)
-	(text "JTAG"
+	(text "JTAG & USART"
 		(exclude_from_sim no)
-		(at 196.85 164.338 0)
+		(at 206.502 153.924 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -5030,6 +5030,14 @@
 	(no_connect
 		(at 167.64 130.81)
 		(uuid "a8c2f2b5-ad2a-4074-8563-f9101fc8d0c2")
+	)
+	(no_connect
+		(at 167.64 181.61)
+		(uuid "b0cde8a4-c443-4562-b80d-67211dad258f")
+	)
+	(no_connect
+		(at 167.64 184.15)
+		(uuid "bbd9cfa7-8af6-40ed-9178-9488bc263580")
 	)
 	(no_connect
 		(at 167.64 166.37)
