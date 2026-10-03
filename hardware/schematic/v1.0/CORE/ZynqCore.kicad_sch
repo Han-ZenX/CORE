@@ -7084,6 +7084,10 @@
 		(uuid "ff631ce4-6910-4edc-be90-9ca6b6bc9f78")
 	)
 	(no_connect
+		(at 77.47 41.91)
+		(uuid "0f399912-757d-4c38-8f5e-8644d9f1f026")
+	)
+	(no_connect
 		(at 62.23 46.99)
 		(uuid "481e554b-0971-466b-b94e-bb8689f28bda")
 	)
@@ -7098,6 +7102,10 @@
 	(no_connect
 		(at 77.47 146.05)
 		(uuid "ebe34a62-a170-4714-957c-791475777e26")
+	)
+	(no_connect
+		(at 105.41 41.91)
+		(uuid "f66d7ef8-182d-4927-b703-922b93c2b05a")
 	)
 	(polyline
 		(pts
@@ -9433,6 +9441,17 @@
 		)
 		(uuid "0c85a9e7-a769-4345-a950-59cae5e96bfd")
 	)
+	(hierarchical_label "IO4"
+		(shape bidirectional)
+		(at 223.52 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0d45998f-a634-424c-a162-1f6544c5d28d")
+	)
 	(hierarchical_label "SD_CD"
 		(shape input)
 		(at 163.83 151.13 180)
@@ -9587,6 +9606,17 @@
 		)
 		(uuid "39d90e84-4866-462a-99a4-8ab2aa23c4e0")
 	)
+	(hierarchical_label "IO5"
+		(shape bidirectional)
+		(at 223.52 95.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3b690b64-7e4f-4402-ad83-78020e9d8875")
+	)
 	(hierarchical_label "PL_LED0"
 		(shape output)
 		(at 163.83 85.09 180)
@@ -9641,6 +9671,17 @@
 			(justify left)
 		)
 		(uuid "405a98ec-9d27-4369-9ab9-e609ea411b17")
+	)
+	(hierarchical_label "IO2"
+		(shape bidirectional)
+		(at 223.52 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4247aa41-ef16-4c8e-8da1-1a6049344a11")
 	)
 	(hierarchical_label "LCD_R2"
 		(shape output)
@@ -9763,6 +9804,17 @@
 		)
 		(uuid "67221343-9aae-44de-8dd6-2cca288f9e8b")
 	)
+	(hierarchical_label "IO1"
+		(shape bidirectional)
+		(at 223.52 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6d554e3d-75f8-4cbe-b8c1-9c1cf09209f5")
+	)
 	(hierarchical_label "LCD_CLK"
 		(shape output)
 		(at 62.23 97.79 180)
@@ -9784,6 +9836,17 @@
 			(justify left)
 		)
 		(uuid "6eedbe3e-39b8-43d1-b915-70b7eafbbcc3")
+	)
+	(hierarchical_label "IO8"
+		(shape bidirectional)
+		(at 223.52 105.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6f25ba3c-29e6-4088-852e-6ed88f419491")
 	)
 	(hierarchical_label "BOOT_MODE0"
 		(shape input)
@@ -9905,6 +9968,17 @@
 			(justify left)
 		)
 		(uuid "7d7555a9-ea9b-43f2-b99b-9adccaaea710")
+	)
+	(hierarchical_label "IO3"
+		(shape bidirectional)
+		(at 223.52 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7db69e55-f877-4032-9cb0-c83345d7e14c")
 	)
 	(hierarchical_label "PS_RXD"
 		(shape input)
@@ -10159,6 +10233,28 @@
 		)
 		(uuid "ba5951d6-8db2-4c1e-b63a-c4997de5c681")
 	)
+	(hierarchical_label "IO0"
+		(shape bidirectional)
+		(at 223.52 82.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bc139226-31b3-4423-abc9-af1a563d1800")
+	)
+	(hierarchical_label "IO7"
+		(shape bidirectional)
+		(at 223.52 102.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "be788bdf-1ada-4b04-908f-6570c42cfd84")
+	)
 	(hierarchical_label "XADC_VP"
 		(shape input)
 		(at 219.71 135.89 0)
@@ -10269,6 +10365,17 @@
 		)
 		(uuid "d9616d5f-2a67-4446-9502-9c65828af0d5")
 	)
+	(hierarchical_label "IO9"
+		(shape bidirectional)
+		(at 223.52 107.95 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "dc2088fb-393c-4a47-99b2-47b4d4324201")
+	)
 	(hierarchical_label "PHY1_MDI3_P"
 		(shape bidirectional)
 		(at 170.18 39.37 180)
@@ -10290,6 +10397,17 @@
 			(justify right)
 		)
 		(uuid "df6856b8-a063-40fa-830c-88393dcce034")
+	)
+	(hierarchical_label "IO6"
+		(shape bidirectional)
+		(at 223.52 97.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e05df6e9-448e-4de9-b9e4-887654d4f6d9")
 	)
 	(hierarchical_label "CLK1_FX_P"
 		(shape input)
