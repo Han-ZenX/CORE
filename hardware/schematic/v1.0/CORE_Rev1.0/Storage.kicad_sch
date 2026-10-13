@@ -7689,7 +7689,7 @@
 			(uuid "47f88175-60a2-4e53-b3fc-8128c2359887")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "C20")
 					(unit 1)
@@ -7766,7 +7766,7 @@
 			(uuid "cb8edc09-5dc2-4c03-8198-ca63e9150eb6")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "#PWR021")
 					(unit 1)
@@ -7845,7 +7845,7 @@
 			(uuid "03e9ad90-59d8-40fe-9b6c-d9a2b89d16bc")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "R28")
 					(unit 1)
@@ -7924,7 +7924,7 @@
 			(uuid "6dde9216-9c33-4db3-96f6-f377d65292bf")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "R19")
 					(unit 1)
@@ -8001,7 +8001,7 @@
 			(uuid "4754942f-c872-41d0-98f9-5597123bfc3d")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "#PWR020")
 					(unit 1)
@@ -8080,7 +8080,7 @@
 			(uuid "0e956537-0b2e-44e9-aa53-c5770e9b3cc0")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "R23")
 					(unit 1)
@@ -8158,7 +8158,7 @@
 			(uuid "7c2daf76-6564-4f25-880b-edf41c99a738")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "#PWR034")
 					(unit 1)
@@ -8237,7 +8237,7 @@
 			(uuid "ec8faae2-5e33-4774-b1b5-41478ca47ee9")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "R11")
 					(unit 1)
@@ -8316,7 +8316,7 @@
 			(uuid "f77847b8-eaee-4c62-9b2c-39296d854cc2")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "R32")
 					(unit 1)
@@ -8395,7 +8395,7 @@
 			(uuid "7a7c2437-ae3d-4756-be24-854a54b98e8a")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "C3")
 					(unit 1)
@@ -8509,7 +8509,7 @@
 			(uuid "fa010ecb-b2d1-4ef9-90d6-f39af1c97ab8")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "U3")
 					(unit 1)
@@ -8588,7 +8588,7 @@
 			(uuid "783ceed4-eaa8-44b8-bad7-b7e129295dec")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "C25")
 					(unit 1)
@@ -8667,7 +8667,7 @@
 			(uuid "0e9c4be3-baa6-492c-8fd8-d5c9bd3d26e5")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "R31")
 					(unit 1)
@@ -8790,7 +8790,7 @@
 			(uuid "ede3345b-081b-4d76-96ab-f4e6b6fa1397")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "BOOT_CFG1")
 					(unit 1)
@@ -8869,7 +8869,7 @@
 			(uuid "0a1f9a7a-d4dc-4bb9-8168-b42eb7ff79e9")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "R39")
 					(unit 1)
@@ -9170,7 +9170,7 @@
 			(uuid "8d03abe2-5079-4714-8f13-b0759ded4850")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "U12")
 					(unit 1)
@@ -9249,7 +9249,7 @@
 			(uuid "e5498fc3-5fdd-4110-85a7-821fdc3335c6")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "#PWR077")
 					(unit 1)
@@ -9368,7 +9368,7 @@
 			(uuid "396cbe96-6c8c-48e3-b1a3-78cd5cdbf162")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "X1")
 					(unit 1)
@@ -9447,7 +9447,7 @@
 			(uuid "614949dc-bc43-45c6-a4fd-3b7f0dea1141")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "#PWR031")
 					(unit 1)
@@ -9526,7 +9526,7 @@
 			(uuid "07e41e33-2d8a-45bd-b22c-5c0272e4d0c4")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "#PWR022")
 					(unit 1)
@@ -9605,7 +9605,7 @@
 			(uuid "985f3a4d-71b4-48b8-a217-5316c369baf4")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "#PWR019")
 					(unit 1)
@@ -9683,7 +9683,7 @@
 			(uuid "a6ff40bf-6006-48e5-87cc-477f8aba1303")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "#PWR033")
 					(unit 1)
@@ -9832,7 +9832,7 @@
 			(uuid "43663c01-9043-4818-b883-e7fe1a9aeeb0")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "U1")
 					(unit 1)
@@ -9911,7 +9911,7 @@
 			(uuid "7ced682c-b035-4663-b4b8-2a6bf0e35b03")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "#PWR06")
 					(unit 1)
@@ -9990,7 +9990,7 @@
 			(uuid "84e435ff-fd07-46d4-936b-1e69b0dcd94a")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "C24")
 					(unit 1)
@@ -10069,7 +10069,7 @@
 			(uuid "fc7258a2-a7a5-4bd7-a83c-d5f100aafcca")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "R16")
 					(unit 1)
@@ -10148,7 +10148,7 @@
 			(uuid "87c9bd01-beb0-4042-85ef-cd2aa729de60")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "R27")
 					(unit 1)
@@ -10227,7 +10227,7 @@
 			(uuid "e49aef30-c05d-40cb-8962-1ec2e85d9df1")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "R22")
 					(unit 1)
@@ -10306,7 +10306,7 @@
 			(uuid "235633f4-8089-4097-b8f0-7b87fc8b9400")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "#PWR04")
 					(unit 1)
@@ -10385,7 +10385,7 @@
 			(uuid "835c1578-e54b-4ed7-8912-861393abc3ec")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "#PWR016")
 					(unit 1)
@@ -10464,7 +10464,7 @@
 			(uuid "3ce277b1-86c1-43c6-965a-5ac0a0529a1a")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "#PWR049")
 					(unit 1)
@@ -10543,7 +10543,7 @@
 			(uuid "4ec90f8a-55af-4488-8201-b1f7f756a947")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "R29")
 					(unit 1)
@@ -10622,7 +10622,7 @@
 			(uuid "f4cf3b4f-3fb0-414d-9996-28d87cdad09a")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "C2")
 					(unit 1)
@@ -10746,7 +10746,7 @@
 			(uuid "741af3d3-51de-41f3-a369-53a483d5b127")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "J12")
 					(unit 1)
@@ -10825,7 +10825,7 @@
 			(uuid "74b04a75-e799-4161-9fee-b5c4799377ae")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "C4")
 					(unit 1)
@@ -10904,7 +10904,7 @@
 			(uuid "140cc72c-e0ab-4adf-b627-2be02133b0cb")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "#PWR018")
 					(unit 1)
@@ -10983,7 +10983,7 @@
 			(uuid "dfcac0db-1d00-40fd-b0b0-9904d5bd840c")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "C21")
 					(unit 1)
@@ -11108,7 +11108,7 @@
 			(uuid "eaf696a9-681a-44de-985a-6d4d1fb9a4b1")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "U6")
 					(unit 1)
@@ -11187,7 +11187,7 @@
 			(uuid "e6d31c66-2759-43d7-afae-cea200599278")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "R15")
 					(unit 1)
@@ -11266,7 +11266,7 @@
 			(uuid "3275d5df-ce14-4c8d-8954-ac3500044d55")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "R21")
 					(unit 1)
@@ -11345,7 +11345,7 @@
 			(uuid "5824c62b-2079-49af-a8a9-db932dca4f1d")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "#PWR078")
 					(unit 1)
@@ -11424,7 +11424,7 @@
 			(uuid "0faf7380-3e13-494c-83bc-40c8871629c9")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "R13")
 					(unit 1)
@@ -11503,7 +11503,7 @@
 			(uuid "92948100-d9d8-4b4a-bd62-24616517cab4")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "C23")
 					(unit 1)
@@ -11582,7 +11582,7 @@
 			(uuid "6a9bd0bf-8cde-4caf-a396-32eb78593959")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "#PWR032")
 					(unit 1)
@@ -11661,7 +11661,7 @@
 			(uuid "b918f008-bf6f-471c-8e14-c81821dd665a")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "R33")
 					(unit 1)
@@ -11740,7 +11740,7 @@
 			(uuid "005e885c-d6a9-475f-a392-af69001758bb")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "R18")
 					(unit 1)
@@ -11819,7 +11819,7 @@
 			(uuid "3d25b695-a838-4b32-8a31-960b4e2792c2")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "R12")
 					(unit 1)
@@ -11898,7 +11898,7 @@
 			(uuid "7e9e257b-ba7b-49a1-944f-d71bf5906c16")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "R30")
 					(unit 1)
@@ -11975,7 +11975,7 @@
 			(uuid "1278e170-8c08-455d-8592-4568d17ab913")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "#PWR014")
 					(unit 1)
@@ -12053,7 +12053,7 @@
 			(uuid "da0015fa-ac20-4af7-b333-b8db00b2c18a")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "#PWR017")
 					(unit 1)
@@ -12132,7 +12132,7 @@
 			(uuid "0e61d104-491f-43d5-9dc2-e45b1770c925")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "R44")
 					(unit 1)
@@ -12211,7 +12211,7 @@
 			(uuid "f731bc73-288c-4220-af85-65c7ad5bbef9")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "R14")
 					(unit 1)
@@ -12290,7 +12290,7 @@
 			(uuid "1138fc31-35b2-4f90-b185-13a59868ab55")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "R20")
 					(unit 1)
@@ -12369,7 +12369,7 @@
 			(uuid "9e74881a-ea92-4821-968b-2574d0ab9f4c")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "R43")
 					(unit 1)
@@ -12447,7 +12447,7 @@
 			(uuid "8206fcba-897c-4585-bc42-ebdc29085e5a")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "#PWR05")
 					(unit 1)
@@ -12526,7 +12526,7 @@
 			(uuid "b4a8b2d8-9dd5-43df-8e8a-02a1354dcca2")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "#PWR015")
 					(unit 1)
@@ -12605,7 +12605,7 @@
 			(uuid "c339d354-f100-442b-afa9-d021c68519a7")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "R34")
 					(unit 1)
@@ -12684,7 +12684,7 @@
 			(uuid "a3fef82c-b797-4b81-bb06-0147ae496845")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "C5")
 					(unit 1)
@@ -12763,7 +12763,7 @@
 			(uuid "3dda774b-7386-4151-8005-407a8f8f9697")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "R35")
 					(unit 1)
@@ -12842,7 +12842,7 @@
 			(uuid "6c72687d-33d4-4287-bbc0-6fc75e4793f3")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "R17")
 					(unit 1)
@@ -12921,7 +12921,7 @@
 			(uuid "5af68e06-da6c-48a6-b812-887fb044dba9")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "#PWR050")
 					(unit 1)
@@ -13000,7 +13000,7 @@
 			(uuid "acaaf98b-33df-49fb-871e-088c650e0086")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "C22")
 					(unit 1)
@@ -13079,7 +13079,7 @@
 			(uuid "72bed7ab-910e-48dd-b9ce-7cdc558703fc")
 		)
 		(instances
-			(project "CORE"
+			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6"
 					(reference "R38")
 					(unit 1)
