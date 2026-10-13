@@ -5,7 +5,7 @@
 	(uuid "2934450c-f5dc-46b0-aa2a-100442f97098")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Counter:FPC-40"
+		(symbol "CORE:FPC-40"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -33,7 +33,7 @@
 					(justify left bottom)
 				)
 			)
-			(property "Footprint" "FPC-TOP40"
+			(property "Footprint" "CORE:LAIL-FPC-CDX01-40P0_5-GW"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -849,7 +849,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Counter:FPC-6P"
+		(symbol "CORE:FPC-6P"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -875,7 +875,7 @@
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "CORE:FPC-05F-6PH20"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -886,7 +886,7 @@
 					)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2109221030_XUNPU-FPC-05F-6PH20_C2856796.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -898,6 +898,17 @@
 				)
 			)
 			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "C2856796 FPC-05F-6PH20 FPC-SMD_6P-P0.50_XUNPU_FPC-05F-6PH20 XUNPU"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -922,7 +933,7 @@
 				)
 			)
 			(symbol "FPC-6P_1_1"
-				(pin input line
+				(pin passive line
 					(at -2.54 -3.81 0)
 					(length 2.54)
 					(name "1"
@@ -940,7 +951,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at -2.54 -6.35 0)
 					(length 2.54)
 					(name "2"
@@ -958,7 +969,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at -2.54 -8.89 0)
 					(length 2.54)
 					(name "3"
@@ -976,7 +987,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at -2.54 -11.43 0)
 					(length 2.54)
 					(name "4"
@@ -994,7 +1005,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at -2.54 -13.97 0)
 					(length 2.54)
 					(name "5"
@@ -1012,7 +1023,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at -2.54 -16.51 0)
 					(length 2.54)
 					(name "6"
@@ -1030,7 +1041,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 8.89 -16.51 180)
 					(length 2.54)
 					(name "SH"
@@ -1048,7 +1059,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 8.89 -3.81 180)
 					(length 2.54)
 					(name "SH"
@@ -1938,16 +1949,16 @@
 		(uuid "74945211-dc18-4958-92af-54418b733131")
 	)
 	(junction
-		(at 138.43 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c0c65dc6-4498-42da-9ff0-981ddbe5c5f0")
-	)
-	(junction
 		(at 115.57 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d78d8617-c8d9-4913-a60c-703ada3dc970")
+	)
+	(junction
+		(at 138.43 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e89331be-58cf-42ab-a85d-86d44ed0c326")
 	)
 	(no_connect
 		(at 138.43 62.23)
@@ -2634,104 +2645,6 @@
 		(uuid "f2d3906e-11ea-4262-8027-125763d247c3")
 	)
 	(symbol
-		(lib_id "Counter:FPC-6P")
-		(at 127 121.92 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "19e9eb0f-e6a1-4ab3-b865-4c9cdacdd637")
-		(property "Reference" "U7"
-			(at 130.175 116.84 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "FPC-6P"
-			(at 130.175 119.38 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 127 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 127 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 127 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "5"
-			(uuid "e496ae1a-6da6-4d14-a8c4-8cc5b0c286f9")
-		)
-		(pin "2"
-			(uuid "58a1b5ac-34c0-44a1-8fa3-4fb0bcd8445a")
-		)
-		(pin "7"
-			(uuid "9190e89f-b379-4f1d-af77-873197a361c1")
-		)
-		(pin "6"
-			(uuid "14e69b9f-0fa3-41bd-8770-62766627c779")
-		)
-		(pin "8"
-			(uuid "8cce2611-0ae4-48ac-aaf0-613c6c54718e")
-		)
-		(pin "1"
-			(uuid "9097cb70-b19a-4e78-9419-7b8eebe40986")
-		)
-		(pin "3"
-			(uuid "5595f9e9-74fc-4406-835e-aa22388b106d")
-		)
-		(pin "4"
-			(uuid "5ddfa243-8dd1-4d66-a3e3-7497edf5451a")
-		)
-		(instances
-			(project "CORE_Rev1.0"
-				(path "/c7438a17-8217-4925-98df-f8ca6801320f/f61d5a97-b8cb-48b7-b2d8-b1ec9597c5e7"
-					(reference "U7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 121.92 130.81 270)
 		(mirror x)
@@ -2806,206 +2719,6 @@
 			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/f61d5a97-b8cb-48b7-b2d8-b1ec9597c5e7"
 					(reference "#PWR089")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Counter:FPC-40")
-		(at 120.65 52.07 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "23948dad-06f5-4cb3-af4c-0793be05d051")
-		(property "Reference" "RGB TFTLCD1"
-			(at 129.54 44.45 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.8288 1.8288)
-				)
-			)
-		)
-		(property "Value" "RGBLCD"
-			(at 129.54 48.26 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.8288 1.8288)
-				)
-			)
-		)
-		(property "Footprint" "AD:FPC-TOP40"
-			(at 120.65 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 120.65 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "FPC-40P-0.5mm"
-			(at 120.65 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "B"
-			(uuid "4344f0f8-6d8f-4fea-9a3a-1ac75fabbabd")
-		)
-		(pin "38"
-			(uuid "88a13b9b-afde-415d-82c1-52da12268b1b")
-		)
-		(pin "15"
-			(uuid "3d61c135-2d2c-47fc-af05-bb50d27914f8")
-		)
-		(pin "18"
-			(uuid "6ca92dab-010c-4f34-9c09-14c7a41b8da0")
-		)
-		(pin "3"
-			(uuid "bfe561cc-601d-4aa5-a043-695aeaabdeb6")
-		)
-		(pin "12"
-			(uuid "35374322-bfd9-4f73-946d-199a834a9464")
-		)
-		(pin "25"
-			(uuid "648f00fb-3960-4bab-96f6-a5a92f099085")
-		)
-		(pin "36"
-			(uuid "f939463c-fb9d-437f-b2b8-4f272f1a647a")
-		)
-		(pin "31"
-			(uuid "9a0ea896-21c7-46a1-b6b1-43fde5b2c4b6")
-		)
-		(pin "24"
-			(uuid "13681c71-bb90-4e3f-ba38-ec1d77b9017d")
-		)
-		(pin "20"
-			(uuid "569345fa-c397-4f06-8249-1a031b844ddf")
-		)
-		(pin "14"
-			(uuid "98543ff5-6531-40cb-8b1c-656829dbeb82")
-		)
-		(pin "8"
-			(uuid "0d5f1af6-8dc7-4d20-892a-43bcd8f1cd10")
-		)
-		(pin "10"
-			(uuid "137f4a37-764a-4e05-b861-8a6ce079443e")
-		)
-		(pin "19"
-			(uuid "3d98d193-72b8-4631-b4aa-9c94f6ad1883")
-		)
-		(pin "4"
-			(uuid "3905f9b5-1577-43db-8faf-9bfa50097809")
-		)
-		(pin "22"
-			(uuid "aac65ef2-253e-4cfe-8e61-462f7cf8b3f5")
-		)
-		(pin "29"
-			(uuid "a927e2ab-c93a-43c5-af3e-e7ea53620125")
-		)
-		(pin "30"
-			(uuid "bbb804bf-431c-4b71-9975-1b1536ed6867")
-		)
-		(pin "27"
-			(uuid "edf9f95e-9630-4b4f-818a-12223a43f56f")
-		)
-		(pin "16"
-			(uuid "9ba56b2a-ba95-4ac2-9ab1-84f053cac9e2")
-		)
-		(pin "32"
-			(uuid "473c7eab-d2ee-4e05-9ce6-2483d4b2b194")
-		)
-		(pin "33"
-			(uuid "f928984a-8033-4c7f-b762-725b08538b40")
-		)
-		(pin "11"
-			(uuid "6ad8431e-df9a-4d7a-8759-5c86a559f358")
-		)
-		(pin "34"
-			(uuid "7d2f003d-05ca-4148-befd-e8f94a4c176c")
-		)
-		(pin "35"
-			(uuid "e0cb9e8f-2688-4e96-a8f3-c5bab7e7905e")
-		)
-		(pin "37"
-			(uuid "08493749-2077-4b6d-8fcf-3fc5bd8027b9")
-		)
-		(pin "1"
-			(uuid "b1e2a199-7159-4f85-80c8-abeb0e90f1fb")
-		)
-		(pin "2"
-			(uuid "ec8139bf-b3c6-4fdc-aee2-bcef1d1c9b5b")
-		)
-		(pin "6"
-			(uuid "b3b823b2-7440-465f-a080-e5e954ac9964")
-		)
-		(pin "23"
-			(uuid "7b1dae67-65a8-4914-95a4-6a72e163d051")
-		)
-		(pin "26"
-			(uuid "ed66596f-41d4-4387-bf15-1c2031f84610")
-		)
-		(pin "40"
-			(uuid "8458eb81-8274-44a4-a68a-d35d8c0db39b")
-		)
-		(pin "13"
-			(uuid "3c062643-5605-4cde-af34-fd31f47cbe5b")
-		)
-		(pin "5"
-			(uuid "935684ce-fd05-480f-a741-17557678a9b7")
-		)
-		(pin "17"
-			(uuid "2814bc65-61c7-4f2e-bfe9-be515e1d48cc")
-		)
-		(pin "28"
-			(uuid "7ace66ed-6412-4d61-bf9e-275b8d1c1087")
-		)
-		(pin "7"
-			(uuid "ebd5eca2-5dc7-4c7c-9931-ef40d3fa637d")
-		)
-		(pin "21"
-			(uuid "1dffe7ea-e325-4835-8aff-9633922a7b81")
-		)
-		(pin "A"
-			(uuid "11110b49-2b10-41d2-8b86-846eed71132b")
-		)
-		(pin "9"
-			(uuid "475c2a44-bd23-4b2b-adfb-233f6ff95340")
-		)
-		(pin "39"
-			(uuid "823a1b15-f939-41b4-a25f-326b91f3707e")
-		)
-		(instances
-			(project "CORE_Rev1.0"
-				(path "/c7438a17-8217-4925-98df-f8ca6801320f/f61d5a97-b8cb-48b7-b2d8-b1ec9597c5e7"
-					(reference "RGB TFTLCD1")
 					(unit 1)
 				)
 			)
@@ -4083,6 +3796,206 @@
 		)
 	)
 	(symbol
+		(lib_id "CORE:FPC-40")
+		(at 120.65 52.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "acda526f-8659-4eb4-bbce-8ec9636b331f")
+		(property "Reference" "RGB TFTLCD1"
+			(at 129.54 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.8288 1.8288)
+				)
+			)
+		)
+		(property "Value" "RGBLCD"
+			(at 129.54 48.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.8288 1.8288)
+				)
+			)
+		)
+		(property "Footprint" "CORE:LAIL-FPC-CDX01-40P0_5-GW"
+			(at 120.65 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 120.65 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "FPC-40P-0.5mm"
+			(at 120.65 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "936a1660-82d1-49d1-b2b0-4b60ce3f6b8b")
+		)
+		(pin "2"
+			(uuid "08abcc32-e895-4783-8708-73d23e12e149")
+		)
+		(pin "3"
+			(uuid "9b02dece-df51-424d-a62a-f041aecee641")
+		)
+		(pin "4"
+			(uuid "0c53e00c-9d15-4f9f-afc8-1721a17609de")
+		)
+		(pin "5"
+			(uuid "6f19ee3d-1563-4c5d-b5a8-a3ca024ce53c")
+		)
+		(pin "6"
+			(uuid "585d977a-978d-41b1-977d-322c98dcc6dc")
+		)
+		(pin "7"
+			(uuid "9afcea62-44f8-448d-9d2f-7f7b722c1b1c")
+		)
+		(pin "31"
+			(uuid "571125f3-cd24-4bd0-bbf8-b1bf488ffc79")
+		)
+		(pin "20"
+			(uuid "cc80c149-a5ba-4526-b095-a5832edf3c04")
+		)
+		(pin "23"
+			(uuid "1c900646-9d85-4238-b040-b2e4784d88fd")
+		)
+		(pin "14"
+			(uuid "681fb856-7aa6-486f-9a33-50bdf4c49639")
+		)
+		(pin "36"
+			(uuid "dbf96ff8-5008-49b5-a53e-34f953d431a2")
+		)
+		(pin "39"
+			(uuid "50c5f7e1-8d31-4158-8f50-67ba541d255a")
+		)
+		(pin "11"
+			(uuid "9174f1dd-5532-4fb5-903c-5a883f6ab496")
+		)
+		(pin "12"
+			(uuid "ae1763b7-3e5b-4e56-bcb9-dacb8530ca12")
+		)
+		(pin "16"
+			(uuid "b2b0af54-5b88-4c05-b50c-810b349fdcea")
+		)
+		(pin "29"
+			(uuid "dd8dfee0-9505-4f6e-bfcf-7df6d7f4c84c")
+		)
+		(pin "8"
+			(uuid "19dce58d-d762-4f95-8513-f119f054a876")
+		)
+		(pin "33"
+			(uuid "3d3efe69-1faa-4771-9232-2a7ed45c81b2")
+		)
+		(pin "13"
+			(uuid "c5ef9b11-4299-4dcf-98c4-3e2244e2f4cc")
+		)
+		(pin "40"
+			(uuid "063b430f-c987-4deb-a24c-4aa002922c9d")
+		)
+		(pin "17"
+			(uuid "85f57699-b539-443e-83b2-e5fd3821915f")
+		)
+		(pin "18"
+			(uuid "e9c37bed-65d7-4fc9-bd97-44063e43b275")
+		)
+		(pin "32"
+			(uuid "029717f0-72f2-4ce5-a83e-545f9c1ffc91")
+		)
+		(pin "15"
+			(uuid "d66b626f-1414-4c00-ab15-be1e34ebf01c")
+		)
+		(pin "27"
+			(uuid "f09698e0-8a07-4dbd-b57a-fb7b72765276")
+		)
+		(pin "28"
+			(uuid "31203475-b294-485f-ada9-4443c4bfddc4")
+		)
+		(pin "38"
+			(uuid "f73e6882-e44a-4411-afbc-81cf9c85da23")
+		)
+		(pin "25"
+			(uuid "994f2065-a0a9-4ab4-9561-90facea5185c")
+		)
+		(pin "30"
+			(uuid "b7f7f3e5-fcd4-433a-a858-32279814335a")
+		)
+		(pin "19"
+			(uuid "30d54f73-4292-4756-85b0-aadc6fc98df2")
+		)
+		(pin "26"
+			(uuid "89803663-faef-4f94-a67a-e3dec2b2ec1d")
+		)
+		(pin "10"
+			(uuid "d599de25-505e-4490-9515-2c682dbbed30")
+		)
+		(pin "21"
+			(uuid "c80e5bb8-276c-4bbd-9387-3d4b99ebe5c7")
+		)
+		(pin "22"
+			(uuid "a89afe21-fae3-4bb6-89a6-533c0f9bbb31")
+		)
+		(pin "9"
+			(uuid "ccff4eee-0fb4-43a9-aeeb-760918c49a2f")
+		)
+		(pin "34"
+			(uuid "185fd5ca-9134-41c3-8a72-93a9ee00189e")
+		)
+		(pin "35"
+			(uuid "4b8e1796-77e3-45f7-824c-a96bc0daca82")
+		)
+		(pin "24"
+			(uuid "752eb61b-b92a-473f-b757-6a0627aff24e")
+		)
+		(pin "37"
+			(uuid "51323dd6-cadc-452b-b3f7-5cd3fa6ab414")
+		)
+		(pin "B"
+			(uuid "6e486800-10db-4ef7-b2ce-857ca115f40d")
+		)
+		(pin "A"
+			(uuid "0bd2afd1-82a3-4117-8468-0237f3bb3788")
+		)
+		(instances
+			(project "CORE_Rev1.0"
+				(path "/c7438a17-8217-4925-98df-f8ca6801320f/f61d5a97-b8cb-48b7-b2d8-b1ec9597c5e7"
+					(reference "RGB TFTLCD1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 121.92 128.27 90)
 		(unit 1)
@@ -4316,6 +4229,104 @@
 			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/f61d5a97-b8cb-48b7-b2d8-b1ec9597c5e7"
 					(reference "#PWR083")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CORE:FPC-6P")
+		(at 127 121.92 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e8da8293-6118-4bef-af4b-71bbc6621334")
+		(property "Reference" "U7"
+			(at 130.175 116.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FPC-6P"
+			(at 130.175 119.38 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CORE:FPC-05F-6PH20"
+			(at 127 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2109221030_XUNPU-FPC-05F-6PH20_C2856796.pdf"
+			(at 127 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 127 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "59e6da18-6c87-4767-85c6-278c2e233e39")
+		)
+		(pin "7"
+			(uuid "e362a42c-285d-4fbb-a5f5-0c72e93661b5")
+		)
+		(pin "3"
+			(uuid "df8d19a7-c6bc-4012-954a-bd4e10e5cc3e")
+		)
+		(pin "2"
+			(uuid "990f31b4-8a85-4df5-88ad-279028188ea3")
+		)
+		(pin "4"
+			(uuid "4cc8f5a9-482b-4a88-8c81-5d4d63fe3804")
+		)
+		(pin "1"
+			(uuid "1ba2e974-145d-44bf-a9fb-eb397fdc5372")
+		)
+		(pin "6"
+			(uuid "a9b3e8fc-bc2a-4c28-a124-1237349ce11f")
+		)
+		(pin "8"
+			(uuid "8a7d87b4-6b09-4222-be95-70474e67789f")
+		)
+		(instances
+			(project "CORE_Rev1.0"
+				(path "/c7438a17-8217-4925-98df-f8ca6801320f/f61d5a97-b8cb-48b7-b2d8-b1ec9597c5e7"
+					(reference "U7")
 					(unit 1)
 				)
 			)

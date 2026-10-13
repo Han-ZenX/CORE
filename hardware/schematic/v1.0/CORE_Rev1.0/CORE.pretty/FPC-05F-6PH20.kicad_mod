@@ -1,0 +1,230 @@
+(footprint "FPC-05F-6PH20"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "-25℃~+85℃ 0.3mm 0.5mm 2mm 500mA 50V 6P Bottom Contact Hinged Lid Phosphor bronze Surface Mount, Right Angle Tin SMD,P=0.5mm,卧贴 FFC, FPC (Flat Flexible) Connector Assemblies ROHS")
+	(tags "C2856796 FPC-05F-6PH20 FPC-SMD_6P-P0.50_XUNPU_FPC-05F-6PH20 XUNPU")
+	(property "Reference" "REF**"
+		(at 0 -2.912531 0)
+		(layer "F.SilkS")
+		(uuid "6f318498-dee9-4741-9362-1c518d7f8f25")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "~"
+		(at 0 4.91236 0)
+		(layer "F.Fab")
+		(uuid "23bec790-6ae1-467b-83ec-9f29d36fd532")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2109221030_XUNPU-FPC-05F-6PH20_C2856796.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "857dace4-c184-486c-bd43-a7b0a4291d71")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "-25℃~+85℃ 0.3mm 0.5mm 2mm 500mA 50V 6P Bottom Contact Hinged Lid Phosphor bronze Surface Mount, Right Angle Tin SMD,P=0.5mm,卧贴 FFC, FPC (Flat Flexible) Connector Assemblies ROHS"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "956410a5-1461-4eb9-a907-e15161f8223b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" "C2856796"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d06ec801-7d3c-4705-8ab6-0be71eae2841")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -3.7 -1)
+		(end -1.631 -1)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1eeddf9c-37f3-4207-821e-36e2cf1122e6")
+	)
+	(fp_line
+		(start -3.7 -0.193624)
+		(end -3.7 -1)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "27a255fd-7b6b-4d47-87b8-24b253d0e3f0")
+	)
+	(fp_line
+		(start -3.7 3.912464)
+		(end -3.7 2.7686)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "acbf3096-10e9-422e-9e50-bd114e2b6983")
+	)
+	(fp_line
+		(start -3.7 3.912464)
+		(end 3.7 3.912464)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "738f9d3e-2f24-45e7-b011-a92574ce31eb")
+	)
+	(fp_line
+		(start -3.55 3.3)
+		(end 3.7 3.3)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "30b4f9ad-2c63-48ac-a1d3-4de1fbb74e29")
+	)
+	(fp_line
+		(start 3.7 -1.016)
+		(end 1.631137 -1.016)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ba372ada-641d-4cf7-8051-6ce2853db13a")
+	)
+	(fp_line
+		(start 3.7 -0.193624)
+		(end 3.7 -1.016)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2aba7b04-48be-4a2e-a5e8-73d290f23ee1")
+	)
+	(fp_line
+		(start 3.7 3.912464)
+		(end 3.7 2.7686)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "872c04f1-6a1d-4ac0-a847-4a0b85aa8330")
+	)
+	(fp_circle
+		(center -1.827 -1.651)
+		(end -1.7 -1.651)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "7ab87891-54e1-424b-b8f1-1d5c70813dd0")
+	)
+	(fp_circle
+		(center -1.827 -1.651)
+		(end -1.7 -1.651)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "26c36530-6978-4cd1-94c4-244dad712b19")
+	)
+	(pad "1" smd rect
+		(at -1.25 -1.287526)
+		(size 0.3 1.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "fbc0fad8-8bac-4f8a-87c4-fb8e08ff72a8")
+	)
+	(pad "2" smd rect
+		(at -0.75 -1.287526)
+		(size 0.3 1.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "96ace4e0-7384-402c-be88-8f6546f52357")
+	)
+	(pad "3" smd rect
+		(at -0.25 -1.287526)
+		(size 0.3 1.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "ee1b2ce8-7da4-4775-ad4e-511332711faa")
+	)
+	(pad "4" smd rect
+		(at 0.25 -1.287526)
+		(size 0.3 1.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "6559b357-aab1-45c6-9a74-ae1530a9547b")
+	)
+	(pad "5" smd rect
+		(at 0.75 -1.287526)
+		(size 0.3 1.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "8fb99d88-e20a-46c5-b4cf-174b0c0ef66b")
+	)
+	(pad "6" smd rect
+		(at 1.25 -1.287526)
+		(size 0.3 1.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "d3e89818-fbba-4d9d-ae3b-5bf536371b2a")
+	)
+	(pad "7" smd rect
+		(at 2.94 1.287526)
+		(size 2 2.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "c70ecf64-ae7f-4449-89ff-7d1a4d812b62")
+	)
+	(pad "8" smd rect
+		(at -2.94 1.287526)
+		(size 2 2.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "01991f17-78cd-4c7f-8a8a-96ca042a194b")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/CORE.3dshapes/FPC-05F-6PH20.wrl"
+		(offset
+			(xyz 0 2.425 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
