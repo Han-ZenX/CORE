@@ -5,6 +5,327 @@
 	(uuid "3d312b2c-cb92-4427-8c9f-8316afa5ee97")
 	(paper "A4")
 	(lib_symbols
+		(symbol "CORE:AZ1143-04F_R7G"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 9.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "AZ1143-04F_R7G"
+				(at 0 -9.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "CORE:AZ1143-04F_R7G"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1912111437_AMAZING-AZ1143-04F-R7G_C356823.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "0.45pF 1uA 3.3V 4.5V 6A@8/20us 9V ESD Four channels IEC 61000-4-2、IEC 61000-4-5、IEC 61000-4-4 DFN2510-10 ESD and Surge Protection (TVS/ESD) ROHS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C356823"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "AMAZING"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer Part" "AZ1143-04F.R7G"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "AMAZING AZ1143-04F.R7G C356823 DFN2510-10_L2.5-W1.0-P0.50-BL"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "AZ1143-04F_R7G_0_1"
+				(circle
+					(center -7.62 6.35)
+					(radius 0.381)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.382 -7.62) (xy 8.4811 -7.6102) (xy 8.5764 -7.5813) (xy 8.6642 -7.5344) (xy 8.7412 -7.4712)
+						(xy 8.8044 -7.3942) (xy 8.8513 -7.3064) (xy 8.8802 -7.2111) (xy 8.89 -7.112) (xy 8.8802 7.2111)
+						(xy 8.8513 7.3064) (xy 8.8044 7.3942) (xy 8.7412 7.4712) (xy 8.6642 7.5344) (xy 8.5764 7.5813)
+						(xy 8.4811 7.6102) (xy 8.382 7.62) (xy -8.4811 7.6102) (xy -8.5764 7.5813) (xy -8.6642 7.5344)
+						(xy -8.7412 7.4712) (xy -8.8044 7.3942) (xy -8.8513 7.3064) (xy -8.8802 7.2111) (xy -8.89 7.112)
+						(xy -8.8802 -7.2111) (xy -8.8513 -7.3064) (xy -8.8044 -7.3942) (xy -8.7412 -7.4712) (xy -8.6642 -7.5344)
+						(xy -8.5764 -7.5813) (xy -8.4811 -7.6102) (xy -8.382 -7.62) (xy 8.382 -7.62)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "AZ1143-04F_R7G_1_1"
+				(pin passive line
+					(at -11.43 5.08 0)
+					(length 2.54)
+					(name "Line-1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -11.43 2.54 0)
+					(length 2.54)
+					(name "Line-2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -11.43 0 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -11.43 -2.54 0)
+					(length 2.54)
+					(name "Line-3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -11.43 -5.08 0)
+					(length 2.54)
+					(name "Line-4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 11.43 -5.08 180)
+					(length 2.54)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 11.43 -2.54 180)
+					(length 2.54)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 11.43 0 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 11.43 2.54 180)
+					(length 2.54)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 11.43 5.08 180)
+					(length 2.54)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:Conn_01x03_Socket"
 			(pin_names
 				(offset 1.016)
@@ -1147,370 +1468,6 @@
 						)
 					)
 					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Counter:AZ1045-04F.R7G"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "D"
-				(at -13.208 7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.6256 1.6256)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Value" "AZ1143-04F.R7G"
-				(at -8.636 7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.6256 1.6256)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Footprint" "DFN2510P10E"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "BOM_Supplier" "LCSC"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.6256 1.6256)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "BOM_Supplier Part" "C356811"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.6256 1.6256)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "BOM_Manufacturer" "AMAZING"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.6256 1.6256)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "BOM_Manufacturer Part" "AZ1045-04F.R7G"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.6256 1.6256)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Contributor" "LCSC"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.6256 1.6256)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "spicePre" "D"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.6256 1.6256)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "spiceSymbolName" "AZ1045-04F.R7G"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.6256 1.6256)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "ki_fp_filters" "*DFN2510P10E*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "AZ1045-04F.R7G_1_0"
-				(rectangle
-					(start -10.16 7.62)
-					(end 7.62 -7.62)
-					(stroke
-						(width 0)
-						(type solid)
-						(color 136 0 0 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -8.89 6.35)
-					(radius 0.381)
-					(stroke
-						(width 0)
-						(type solid)
-						(color 136 0 0 1)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(pin passive line
-					(at -12.7 5.08 0)
-					(length 2.54)
-					(name "Line-1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 2.54 0)
-					(length 2.54)
-					(name "Line-2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 0 0)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -2.54 0)
-					(length 2.54)
-					(name "Line-3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -5.08 0)
-					(length 2.54)
-					(name "Line-4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 -5.08 180)
-					(length 2.54)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 -2.54 180)
-					(length 2.54)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 0 180)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 2.54 180)
-					(length 2.54)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 5.08 180)
-					(length 2.54)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4765,194 +4722,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Counter:AZ1045-04F.R7G")
-		(at 72.39 54.61 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1af14c02-1f59-4b69-96e6-fd6f713286d2")
-		(property "Reference" "D1"
-			(at 71.12 40.64 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.6256 1.6256)
-				)
-			)
-		)
-		(property "Value" "AZ1143-04F.R7G"
-			(at 71.12 44.45 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.6256 1.6256)
-				)
-			)
-		)
-		(property "Footprint" "Counter:DFN2510P10E"
-			(at 72.39 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 72.39 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 72.39 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "BOM_Supplier" "LCSC"
-			(at 72.39 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.6256 1.6256)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "BOM_Supplier Part" "C356811"
-			(at 72.39 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.6256 1.6256)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "BOM_Manufacturer" "AMAZING"
-			(at 72.39 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.6256 1.6256)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "BOM_Manufacturer Part" "AZ1045-04F.R7G"
-			(at 72.39 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.6256 1.6256)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Contributor" "LCSC"
-			(at 72.39 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.6256 1.6256)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "spicePre" "D"
-			(at 72.39 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.6256 1.6256)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "spiceSymbolName" "AZ1045-04F.R7G"
-			(at 72.39 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.6256 1.6256)
-				)
-				(justify left bottom)
-			)
-		)
-		(pin "2"
-			(uuid "ceb8d28e-af46-48dd-a0a0-4d1f5277a5e5")
-		)
-		(pin "4"
-			(uuid "07024374-19d1-4342-820a-12c5ff514269")
-		)
-		(pin "7"
-			(uuid "a577d489-5fb2-4567-8701-9ec80d3f21bd")
-		)
-		(pin "6"
-			(uuid "f038a68e-d1c3-48bb-ba3e-4bcbf4ab63bc")
-		)
-		(pin "1"
-			(uuid "47b217b5-660d-47cf-9630-77df97bfc819")
-		)
-		(pin "5"
-			(uuid "057ad72f-8e42-4ffc-b62d-68c270c83279")
-		)
-		(pin "8"
-			(uuid "b8432af6-5b86-4a06-9c14-9a2bf280b0d4")
-		)
-		(pin "10"
-			(uuid "d8ae30b8-09ca-49c6-ae48-e48f31cb8529")
-		)
-		(pin "3"
-			(uuid "fcbf6f66-ed5e-489a-b470-ec5bf264727c")
-		)
-		(pin "9"
-			(uuid "2e12d0de-7c79-4868-aa9d-8aac0dcb90f3")
-		)
-		(instances
-			(project "CORE_Rev1.0"
-				(path "/c7438a17-8217-4925-98df-f8ca6801320f/1b8e51b9-1252-4123-a6f3-43015d792c26"
-					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 85.09 86.36 0)
 		(unit 1)
@@ -5105,6 +4874,142 @@
 			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/1b8e51b9-1252-4123-a6f3-43015d792c26"
 					(reference "#PWR069")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CORE:AZ1143-04F_R7G")
+		(at 71.12 74.93 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2bedab38-80fb-4265-aa34-49b70a7f9658")
+		(property "Reference" "D11"
+			(at 71.12 84.836 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AZ1143-04F_R7G"
+			(at 71.12 87.376 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CORE:AZ1143-04F_R7G"
+			(at 71.12 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1912111437_AMAZING-AZ1143-04F-R7G_C356823.pdf"
+			(at 71.12 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "0.45pF 1uA 3.3V 4.5V 6A@8/20us 9V ESD Four channels IEC 61000-4-2、IEC 61000-4-5、IEC 61000-4-4 DFN2510-10 ESD and Surge Protection (TVS/ESD) ROHS"
+			(at 71.12 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C356823"
+			(at 71.12 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "AMAZING"
+			(at 71.12 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "AZ1143-04F.R7G"
+			(at 71.12 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "437d3833-463a-443c-8d33-ebf41b672f7e")
+		)
+		(pin "8"
+			(uuid "a5da3efc-9784-433e-8ae1-eb971d83001d")
+		)
+		(pin "4"
+			(uuid "a747f973-6821-406e-b0d0-8e4dea476426")
+		)
+		(pin "2"
+			(uuid "7e1a4945-7085-4854-9bc6-3d6de10a04d8")
+		)
+		(pin "7"
+			(uuid "82ef4eee-acc1-40b0-8504-c119c56064c1")
+		)
+		(pin "9"
+			(uuid "ebe72b38-70e0-4d46-b76c-e5b476a00b73")
+		)
+		(pin "3"
+			(uuid "343a2043-9c29-471c-acb3-6ab1a2776c00")
+		)
+		(pin "10"
+			(uuid "33c35825-ea31-4136-8e50-8904d4a33c51")
+		)
+		(pin "5"
+			(uuid "665e4b81-f43d-4793-baaf-740f421ad086")
+		)
+		(pin "6"
+			(uuid "142b0460-029d-4830-9711-5dc476f5ffe3")
+		)
+		(instances
+			(project "CORE_Rev1.0"
+				(path "/c7438a17-8217-4925-98df-f8ca6801320f/1b8e51b9-1252-4123-a6f3-43015d792c26"
+					(reference "D11")
 					(unit 1)
 				)
 			)
@@ -5693,193 +5598,6 @@
 			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/1b8e51b9-1252-4123-a6f3-43015d792c26"
 					(reference "#PWR070")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Counter:AZ1045-04F.R7G")
-		(at 72.39 74.93 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "903932f7-7664-47e6-89ae-d2d9942b20af")
-		(property "Reference" "D2"
-			(at 63.754 65.278 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.6256 1.6256)
-				)
-			)
-		)
-		(property "Value" "AZ1143-04F.R7G"
-			(at 71.628 85.598 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.6256 1.6256)
-				)
-			)
-		)
-		(property "Footprint" "Counter:DFN2510P10E"
-			(at 72.39 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 72.39 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 72.39 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "BOM_Supplier" "LCSC"
-			(at 72.39 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.6256 1.6256)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "BOM_Supplier Part" "C356811"
-			(at 72.39 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.6256 1.6256)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "BOM_Manufacturer" "AMAZING"
-			(at 72.39 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.6256 1.6256)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "BOM_Manufacturer Part" "AZ1045-04F.R7G"
-			(at 72.39 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.6256 1.6256)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Contributor" "LCSC"
-			(at 72.39 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.6256 1.6256)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "spicePre" "D"
-			(at 72.39 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.6256 1.6256)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "spiceSymbolName" "AZ1045-04F.R7G"
-			(at 72.39 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.6256 1.6256)
-				)
-				(justify left bottom)
-			)
-		)
-		(pin "2"
-			(uuid "460c0382-597a-455a-983c-4594982b95cd")
-		)
-		(pin "4"
-			(uuid "dd07ba3a-c999-4621-8fff-b7dc37fe501a")
-		)
-		(pin "7"
-			(uuid "7c8f83c4-fd12-4f3e-8a27-15efc0ae971d")
-		)
-		(pin "6"
-			(uuid "7dd1fd7f-3fcb-4f1b-88cd-33424bbc785c")
-		)
-		(pin "1"
-			(uuid "a8d3feb9-1316-4c1c-9408-f6e7f0b6f908")
-		)
-		(pin "5"
-			(uuid "e3fff65b-183a-47a0-b469-9b21d4612f7a")
-		)
-		(pin "8"
-			(uuid "2f8f2f64-13d0-451f-951f-b9e36f391ff9")
-		)
-		(pin "10"
-			(uuid "95f519f2-a62a-4f9f-8c99-da8dd23be88b")
-		)
-		(pin "3"
-			(uuid "cf5c0c08-80f5-4821-a401-1fad9bffe7c1")
-		)
-		(pin "9"
-			(uuid "8a066262-b57d-4451-8efe-e3e0ef412447")
-		)
-		(instances
-			(project "CORE_Rev1.0"
-				(path "/c7438a17-8217-4925-98df-f8ca6801320f/1b8e51b9-1252-4123-a6f3-43015d792c26"
-					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -7405,6 +7123,143 @@
 			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/1b8e51b9-1252-4123-a6f3-43015d792c26"
 					(reference "J16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CORE:AZ1143-04F_R7G")
+		(at 71.12 54.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fa8740cd-8603-4730-8816-506d9a868ae4")
+		(property "Reference" "D10"
+			(at 71.12 41.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AZ1143-04F_R7G"
+			(at 71.12 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CORE:AZ1143-04F_R7G"
+			(at 71.12 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1912111437_AMAZING-AZ1143-04F-R7G_C356823.pdf"
+			(at 71.12 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "0.45pF 1uA 3.3V 4.5V 6A@8/20us 9V ESD Four channels IEC 61000-4-2、IEC 61000-4-5、IEC 61000-4-4 DFN2510-10 ESD and Surge Protection (TVS/ESD) ROHS"
+			(at 71.12 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C356823"
+			(at 71.12 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "AMAZING"
+			(at 71.12 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "AZ1143-04F.R7G"
+			(at 71.12 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e9e6316a-f1db-42f2-b819-6216c9bbf228")
+		)
+		(pin "8"
+			(uuid "fec3ff5c-e2b4-47a8-9320-df6d544b54c9")
+		)
+		(pin "4"
+			(uuid "91f18e18-4abc-43a4-a378-4e4a512d5880")
+		)
+		(pin "2"
+			(uuid "033ac634-b757-46ca-a9d8-e8f97a9e863e")
+		)
+		(pin "7"
+			(uuid "018bc742-7963-44f7-8c03-e98104c6d888")
+		)
+		(pin "9"
+			(uuid "529fe336-9ef6-4595-8914-514a6ee180b6")
+		)
+		(pin "3"
+			(uuid "2587461e-e96d-4993-b371-28765054d24b")
+		)
+		(pin "10"
+			(uuid "a265670f-65a4-46e7-ad76-b86e13dd8e71")
+		)
+		(pin "5"
+			(uuid "a15aa291-8d3a-4ddf-94d3-fe35eaf385df")
+		)
+		(pin "6"
+			(uuid "ffa6e911-87d0-45ed-a4ea-f88ac79f1a46")
+		)
+		(instances
+			(project "CORE_Rev1.0"
+				(path "/c7438a17-8217-4925-98df-f8ca6801320f/1b8e51b9-1252-4123-a6f3-43015d792c26"
+					(reference "D10")
 					(unit 1)
 				)
 			)

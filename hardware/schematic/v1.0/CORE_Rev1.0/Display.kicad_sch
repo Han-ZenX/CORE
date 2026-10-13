@@ -5,6 +5,291 @@
 	(uuid "2934450c-f5dc-46b0-aa2a-100442f97098")
 	(paper "A4")
 	(lib_symbols
+		(symbol "CORE:FPC-05F-6PH20"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "FPC"
+				(at 0 13.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "FPC-05F-6PH20"
+				(at 0 -13.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "CORE:FPC-05F-6PH20"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2109221030_XUNPU-FPC-05F-6PH20_C2856796.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "-25℃~+85℃ 0.3mm 0.5mm 2mm 500mA 50V 6P Bottom Contact Hinged Lid Phosphor bronze Surface Mount, Right Angle Tin SMD,P=0.5mm,卧贴 FFC, FPC (Flat Flexible) Connector Assemblies ROHS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C2856796"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "XUNPU"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer Part" "FPC-05F-6PH20"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "C2856796 FPC-05F-6PH20 FPC-SMD_6P-P0.50_XUNPU_FPC-05F-6PH20 XUNPU"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "FPC-05F-6PH20_0_1"
+				(circle
+					(center -1.27 7.62)
+					(radius 0.381)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.572 -8.89) (xy 4.6711 -8.8802) (xy 4.7664 -8.8513) (xy 4.8542 -8.8044) (xy 4.9312 -8.7412)
+						(xy 4.9944 -8.6642) (xy 5.0413 -8.5764) (xy 5.0702 -8.4811) (xy 5.08 -8.382) (xy 5.0702 8.4811)
+						(xy 5.0413 8.5764) (xy 4.9944 8.6642) (xy 4.9312 8.7412) (xy 4.8542 8.8044) (xy 4.7664 8.8513)
+						(xy 4.6711 8.8802) (xy 4.572 8.89) (xy -2.1311 8.8802) (xy -2.2264 8.8513) (xy -2.3142 8.8044)
+						(xy -2.3912 8.7412) (xy -2.4544 8.6642) (xy -2.5013 8.5764) (xy -2.5302 8.4811) (xy -2.54 8.382)
+						(xy -2.5302 -8.4811) (xy -2.5013 -8.5764) (xy -2.4544 -8.6642) (xy -2.3912 -8.7412) (xy -2.3142 -8.8044)
+						(xy -2.2264 -8.8513) (xy -2.1311 -8.8802) (xy -2.032 -8.89) (xy 4.572 -8.89)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "FPC-05F-6PH20_1_1"
+				(pin passive line
+					(at -5.08 6.35 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 3.81 0)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 1.27 0)
+					(length 2.54)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -1.27 0)
+					(length 2.54)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -3.81 0)
+					(length 2.54)
+					(name "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -6.35 0)
+					(length 2.54)
+					(name "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 -11.43 90)
+					(length 2.54)
+					(name "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 11.43 270)
+					(length 2.54)
+					(name "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "CORE:FPC-40"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -839,237 +1124,6 @@
 						)
 					)
 					(number "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "CORE:FPC-6P"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at 3.048 4.318 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "FPC-6P"
-				(at 3.048 1.778 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "CORE:FPC-05F-6PH20"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2109221030_XUNPU-FPC-05F-6PH20_C2856796.pdf"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "C2856796 FPC-05F-6PH20 FPC-SMD_6P-P0.50_XUNPU_FPC-05F-6PH20 XUNPU"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "FPC-6P_0_1"
-				(rectangle
-					(start 0 0)
-					(end 6.35 -20.32)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "FPC-6P_1_1"
-				(pin passive line
-					(at -2.54 -3.81 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -2.54 -6.35 0)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -2.54 -8.89 0)
-					(length 2.54)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -2.54 -11.43 0)
-					(length 2.54)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -2.54 -13.97 0)
-					(length 2.54)
-					(name "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -2.54 -16.51 0)
-					(length 2.54)
-					(name "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 8.89 -16.51 180)
-					(length 2.54)
-					(name "SH"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 8.89 -3.81 180)
-					(length 2.54)
-					(name "SH"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2032,16 +2086,6 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 125.73) (xy 137.16 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5ee3fd60-bc27-4ae1-92e9-673e4d8dcc37")
-	)
-	(wire
-		(pts
 			(xy 60.96 72.39) (xy 60.96 74.93)
 		)
 		(stroke
@@ -2049,16 +2093,6 @@
 			(type default)
 		)
 		(uuid "74d87999-21f3-4921-8eb6-5469e28ffd23")
-	)
-	(wire
-		(pts
-			(xy 135.89 138.43) (xy 137.16 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8a40a28b-0e8e-413a-a590-7bf9e92892e9")
 	)
 	(wire
 		(pts
@@ -3160,6 +3194,139 @@
 		)
 	)
 	(symbol
+		(lib_id "CORE:FPC-05F-6PH20")
+		(at 129.54 132.08 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "456fe212-5a75-4b4c-8f57-2fa62fed715e")
+		(property "Reference" "FPC1"
+			(at 135.89 130.8099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "FPC-05F-6PH20"
+			(at 135.89 133.3499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "CORE:FPC-05F-6PH20"
+			(at 129.54 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2109221030_XUNPU-FPC-05F-6PH20_C2856796.pdf"
+			(at 129.54 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "-25℃~+85℃ 0.3mm 0.5mm 2mm 500mA 50V 6P Bottom Contact Hinged Lid Phosphor bronze Surface Mount, Right Angle Tin SMD,P=0.5mm,卧贴 FFC, FPC (Flat Flexible) Connector Assemblies ROHS"
+			(at 129.54 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2856796"
+			(at 129.54 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "XUNPU"
+			(at 129.54 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "FPC-05F-6PH20"
+			(at 129.54 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "ca4c2f1a-b933-471e-8bae-e20663ad1303")
+		)
+		(pin "5"
+			(uuid "90b34650-75bf-42e2-9b47-b1666f3f080e")
+		)
+		(pin "4"
+			(uuid "0ef4ad4e-6b90-4a13-80d3-12db7900c153")
+		)
+		(pin "8"
+			(uuid "2d5d1756-77ee-48fc-bc63-1e674139fc56")
+		)
+		(pin "6"
+			(uuid "e356bedd-22b8-4f6e-b3de-236465358c40")
+		)
+		(pin "1"
+			(uuid "89212e73-73e6-4e0c-b1d0-0f227432f313")
+		)
+		(pin "7"
+			(uuid "9549ab75-8406-47cc-ba57-b261cff562fa")
+		)
+		(pin "2"
+			(uuid "cdfa0401-f263-4d81-9f42-e3e3e73852b2")
+		)
+		(instances
+			(project "CORE_Rev1.0"
+				(path "/c7438a17-8217-4925-98df-f8ca6801320f/f61d5a97-b8cb-48b7-b2d8-b1ec9597c5e7"
+					(reference "FPC1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 118.11 57.15 270)
 		(mirror x)
@@ -3398,8 +3565,8 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 137.16 138.43 90)
-		(mirror x)
+		(at 133.35 143.51 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3410,7 +3577,7 @@
 		(fields_autoplaced yes)
 		(uuid "58affe9b-670f-4e59-8b7d-b23fb42238b4")
 		(property "Reference" "#PWR091"
-			(at 143.51 138.43 0)
+			(at 133.35 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3421,7 +3588,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 142.24 138.43 0)
+			(at 133.35 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3432,7 +3599,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 137.16 138.43 0)
+			(at 133.35 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3443,7 +3610,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 137.16 138.43 0)
+			(at 133.35 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3454,7 +3621,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 137.16 138.43 0)
+			(at 133.35 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4076,7 +4243,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 137.16 125.73 90)
+		(at 133.35 120.65 0)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -4088,7 +4255,7 @@
 		(fields_autoplaced yes)
 		(uuid "d3889f8e-38f4-41d4-a5d1-412702f3a319")
 		(property "Reference" "#PWR090"
-			(at 143.51 125.73 0)
+			(at 133.35 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4099,7 +4266,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 142.24 125.73 0)
+			(at 133.35 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4110,7 +4277,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 137.16 125.73 0)
+			(at 133.35 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4121,7 +4288,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 137.16 125.73 0)
+			(at 133.35 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4132,7 +4299,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 137.16 125.73 0)
+			(at 133.35 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4229,104 +4396,6 @@
 			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/f61d5a97-b8cb-48b7-b2d8-b1ec9597c5e7"
 					(reference "#PWR083")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "CORE:FPC-6P")
-		(at 127 121.92 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e8da8293-6118-4bef-af4b-71bbc6621334")
-		(property "Reference" "U7"
-			(at 130.175 116.84 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "FPC-6P"
-			(at 130.175 119.38 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "CORE:FPC-05F-6PH20"
-			(at 127 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2109221030_XUNPU-FPC-05F-6PH20_C2856796.pdf"
-			(at 127 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 127 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "5"
-			(uuid "59e6da18-6c87-4767-85c6-278c2e233e39")
-		)
-		(pin "7"
-			(uuid "e362a42c-285d-4fbb-a5f5-0c72e93661b5")
-		)
-		(pin "3"
-			(uuid "df8d19a7-c6bc-4012-954a-bd4e10e5cc3e")
-		)
-		(pin "2"
-			(uuid "990f31b4-8a85-4df5-88ad-279028188ea3")
-		)
-		(pin "4"
-			(uuid "4cc8f5a9-482b-4a88-8c81-5d4d63fe3804")
-		)
-		(pin "1"
-			(uuid "1ba2e974-145d-44bf-a9fb-eb397fdc5372")
-		)
-		(pin "6"
-			(uuid "a9b3e8fc-bc2a-4c28-a124-1237349ce11f")
-		)
-		(pin "8"
-			(uuid "8a7d87b4-6b09-4222-be95-70474e67789f")
-		)
-		(instances
-			(project "CORE_Rev1.0"
-				(path "/c7438a17-8217-4925-98df-f8ca6801320f/f61d5a97-b8cb-48b7-b2d8-b1ec9597c5e7"
-					(reference "U7")
 					(unit 1)
 				)
 			)
