@@ -665,7 +665,7 @@
         "uuid": "c7438a17-8217-4925-98df-f8ca6801320f"
       }
     ],
-    "used_designators": "FPC1,M1-2,U1-28,SW1,GE_PS1-2,D1-11,JTAG1,#PWR1-151,BOOT_CFG1,R1-47,#FLG1-3,C1-28,J1-16,J26,RJ1,RGB TFTLCD1,Q1,X1,CN1,F1-2,Card1",
+    "used_designators": "FPC1,M1-2,U1-28,SW1,GE_PS1-2,D1-11,JTAG1,#PWR1-159,BOOT_CFG1,R1-47,#FLG1-3,C1-28,J1-16,J26,RJ1,RGB TFTLCD1,Q1,X1,CN1,F1-2,Card1,USB1-2",
     "variants": []
   },
   "sheets": [
