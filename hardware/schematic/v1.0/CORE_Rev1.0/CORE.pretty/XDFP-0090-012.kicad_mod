@@ -1,0 +1,294 @@
+(footprint "XDFP-0090-012"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "-45℃~+80℃ 2mm Connector and Ejector No Push-Push Standard SD Card With Locating Pins SMD SD Card / Memory Card Connector ROHS")
+	(tags "C7498122 Lian Xin Technology SIM-SMD_LX_XDFP-0090-012 XDFP-0090-012")
+	(property "Reference" "REF**"
+		(at 0 -7.1 0)
+		(layer "F.SilkS")
+		(uuid "d691f566-747d-444a-b3ab-00114a43f418")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "~"
+		(at 0 10.7 0)
+		(layer "F.Fab")
+		(uuid "4359d65b-9941-4700-bca5-fa488f8e9e86")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2309191218_Lian-Xin-Technology-XDFP-0090-012_C7498122.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d4fb2d8c-fd83-4d2d-ab3d-2118fbc6dd9b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "-45℃~+80℃ 2mm Connector and Ejector No Push-Push Standard SD Card With Locating Pins SMD SD Card / Memory Card Connector ROHS"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "20ab0ab1-d44f-4adb-a039-79734da98f43")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" "C7498122"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c585f96a-ff6b-40f0-bb0b-0eca7f6e238a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -7.4 -2.869)
+		(end -7.4 3.968826)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "585d4ca3-6a23-4d94-9b5b-f7d6fc97111b")
+	)
+	(fp_line
+		(start -7.4 6.631)
+		(end -7.4 9)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9346d823-0e4d-487f-9a7f-753f72133474")
+	)
+	(fp_line
+		(start -7.4 9)
+		(end 1 9)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "25e4a2d9-5b84-4b47-a513-b5e12409d1b0")
+	)
+	(fp_line
+		(start 1 9)
+		(end 3.9 9.7)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "263b1b22-7b8d-42de-b2f0-dc0f15d42820")
+	)
+	(fp_line
+		(start 2.831 -5.1)
+		(end 3.9 -5.1)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a1b5a644-d462-4651-a4a7-0f8a79cc8c3c")
+	)
+	(fp_line
+		(start 3.9 -5.1)
+		(end 3.9 -4.8)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2580c66c-db26-4ed6-9ef3-f4614481a2c0")
+	)
+	(fp_line
+		(start 3.9 -4.8)
+		(end 5.9 -4.8)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "54cce714-a5ae-43dd-9b81-b7f1d49e1ae0")
+	)
+	(fp_line
+		(start 3.9 9.7)
+		(end 7.5 9.7)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6f178ec5-8aa4-4770-adcf-86152816be58")
+	)
+	(fp_line
+		(start 7.5 3.968826)
+		(end 7.5 -3.3)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "aec0d183-2d91-4be9-9016-24845676acbe")
+	)
+	(fp_line
+		(start 7.5 9.7)
+		(end 7.5 6.631)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "498a39a0-cc0f-40d5-a031-1e70cd6cce9d")
+	)
+	(fp_circle
+		(center -4.95 5.7)
+		(end -4.75 5.7)
+		(stroke
+			(width 0.4)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "526ddfb7-c2bf-448a-be93-0f9c98d5d2cf")
+	)
+	(fp_circle
+		(center 3.05 5.7)
+		(end 3.25 5.7)
+		(stroke
+			(width 0.4)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "2ee01c1e-850c-4b4b-b35d-63035570141d")
+	)
+	(pad "" np_thru_hole circle
+		(at -4.95 5.7)
+		(size 1 1)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(uuid "cb58350e-0d4e-40aa-8dcb-c178994443ee")
+	)
+	(pad "" np_thru_hole circle
+		(at 3.05 5.7)
+		(size 1 1)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(uuid "5919167b-ccd4-4c13-8008-1039ffe80edc")
+	)
+	(pad "1" smd rect
+		(at 2.25 -5.3)
+		(size 0.7 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "0ed4e39c-f811-4b8b-b348-d3fbfd722de6")
+	)
+	(pad "2" smd rect
+		(at 1.149858 -5.3)
+		(size 0.7 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "d4f627f8-da91-4922-a22a-5ead04c70b33")
+	)
+	(pad "3" smd rect
+		(at 0.05 -5.3)
+		(size 0.7 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "5c786b22-3cb3-4ef0-bd13-6aa2ee735fae")
+	)
+	(pad "4" smd rect
+		(at -1.05 -5.3)
+		(size 0.7 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "782d4f6a-6820-4846-ae4c-9a7179a78042")
+	)
+	(pad "5" smd rect
+		(at -2.15 -5.3)
+		(size 0.7 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "ed92aa7d-50ab-4cb8-a6c5-ca45f52cc9fa")
+	)
+	(pad "6" smd rect
+		(at -3.25 -5.3)
+		(size 0.7 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "2b6eed0e-1427-46ec-8d47-cb655d2c1e32")
+	)
+	(pad "7" smd rect
+		(at -4.35 -5.3)
+		(size 0.7 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "64da27f8-aaee-4a7f-9b62-fdad349a1dc0")
+	)
+	(pad "8" smd rect
+		(at -5.45 -5.3)
+		(size 0.7 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "33172ac4-77b1-4a40-a90f-ed1232ec0dee")
+	)
+	(pad "9" smd rect
+		(at -6.55 -5.3)
+		(size 0.7 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "4b968fc9-cb60-47ce-a634-469c2971f4a7")
+	)
+	(pad "10" smd rect
+		(at -7.75 -4 180)
+		(size 1.2 1.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "4bbd3f4f-a175-4301-9c8d-e618d1087d9d")
+	)
+	(pad "10" smd rect
+		(at -7.75 5.3 180)
+		(size 1.2 2.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "3138aef7-c411-4731-93bc-63b8c214a5a9")
+	)
+	(pad "10" smd rect
+		(at 6.850126 -4.25 90)
+		(size 1.5 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "553e7138-337a-4878-ba67-fc40ac6bb928")
+	)
+	(pad "10" smd rect
+		(at 7.75 5.3 180)
+		(size 1.2 2.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "8f56bbf3-553f-43cc-97d9-db0ccdb69dd7")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/CORE.3dshapes/XDFP-0090-012.step"
+		(offset
+			(xyz -29.425 -9.5995 5.751862)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)

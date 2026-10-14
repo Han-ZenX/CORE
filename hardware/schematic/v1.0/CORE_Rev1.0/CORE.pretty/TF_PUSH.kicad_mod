@@ -1,0 +1,316 @@
+(footprint "TF_PUSH"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "-25℃~+90℃ 2mm Connector and Ejector MicroSD Card (TF Card) No Push-Push SMD SD Card / Memory Card Connector ROHS")
+	(tags "C393941 SHOU HAN TF PUSH TF-SMD_TF-PUSH")
+	(property "Reference" "REF**"
+		(at 0 -7.1 0)
+		(layer "F.SilkS")
+		(uuid "79f80da5-d5d4-43ea-994e-e25619354527")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "~"
+		(at 0 10.7 0)
+		(layer "F.Fab")
+		(uuid "cd925d62-1a70-439c-8d9f-8c891d393cb7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1912111437_SHOU-HAN-TF-PUSH_C393941.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "95ad54cd-779e-46ca-ba45-d770290fd01d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "-25℃~+90℃ 2mm Connector and Ejector MicroSD Card (TF Card) No Push-Push SMD SD Card / Memory Card Connector ROHS"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6c464099-6eba-4187-b4ce-d3d88be28224")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" "C393941"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "43d0cca8-a532-4376-a0eb-634a0e174b69")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -7.26 -3.25)
+		(end -7.26 3.91)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ad036779-7d46-4a81-8e1a-997462980f63")
+	)
+	(fp_line
+		(start -7.24 9.7)
+		(end -7.24 6.76)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ec829b4e-c8f6-4c75-a840-857555e4e43e")
+	)
+	(fp_line
+		(start -7.24 9.7)
+		(end 8 9.7)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e2b2d7d4-1a07-403c-bf8d-9c35d582eee8")
+	)
+	(fp_line
+		(start 4.702 -5.29971)
+		(end 5.489448 -5.29971)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9e5f2c8f-a203-49f8-94cc-489b75cd1b08")
+	)
+	(fp_line
+		(start 4.70215 -5.3)
+		(end 2.85 -5.3)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a63604d1-938c-4796-8482-811b31a2d440")
+	)
+	(fp_line
+		(start 5.489448 -5.29971)
+		(end 5.489448 -3.19913)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5cb57675-bf7e-48db-8480-09bb9746c30c")
+	)
+	(fp_line
+		(start 5.489448 -3.19913)
+		(end 5.5 -3.2)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "63cc0117-0b1e-4bbd-95dd-91e6a0d1166b")
+	)
+	(fp_line
+		(start 7.98 -3.2)
+		(end 5.49 -3.2)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ca0f0b0a-7ce7-4d29-8473-13765ab8f5a8")
+	)
+	(fp_line
+		(start 7.98 3.968852)
+		(end 7.98 -3.2)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "647ec402-99f4-4950-acac-4c01df2995fb")
+	)
+	(fp_line
+		(start 8 9.7)
+		(end 8 6.71)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "42d67e8e-fdef-4ce4-bc97-591b9d43ca08")
+	)
+	(fp_circle
+		(center 3.087 -4.552)
+		(end 3.13944 -4.552)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "88b5ed16-0220-4d00-b313-4b3f2932d2a8")
+	)
+	(fp_circle
+		(center -4.95 5.7)
+		(end -4.75 5.7)
+		(stroke
+			(width 0.4)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "1296f51c-af4d-49bd-8e5a-767441d731b4")
+	)
+	(fp_circle
+		(center 2.81 -5.63)
+		(end 2.937 -5.63)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "69bc382a-0ce8-408d-bf05-fcd3bce88f71")
+	)
+	(fp_circle
+		(center 3.05 5.7)
+		(end 3.25 5.7)
+		(stroke
+			(width 0.4)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "a5bf79fc-5d69-49ff-bab0-ed6a478aff38")
+	)
+	(pad "" np_thru_hole circle
+		(at -4.95 5.7)
+		(size 1.2 1.2)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(uuid "b917851d-18ea-4225-85d7-1c68b0b6f929")
+	)
+	(pad "" np_thru_hole circle
+		(at 3.05 5.7)
+		(size 1.2 1.2)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(uuid "a6f01eb0-5ad2-4840-a9e2-4a2ef600f93c")
+	)
+	(pad "1" smd rect
+		(at 2.250186 -5.3)
+		(size 0.7 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "fff875ac-b936-4068-ad2d-d5538a824234")
+	)
+	(pad "2" smd rect
+		(at 1.15 -5.3)
+		(size 0.7 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "099e7b7b-7087-4a3c-a8da-b6d142534cb1")
+	)
+	(pad "3" smd rect
+		(at 0.05 -5.3)
+		(size 0.7 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "dfb345d8-21de-445e-91a8-5fed9c429773")
+	)
+	(pad "4" smd rect
+		(at -1.05 -5.3)
+		(size 0.7 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "471dba01-2e4b-4f9c-b176-cc4390f2a848")
+	)
+	(pad "5" smd rect
+		(at -2.149856 -5.3)
+		(size 0.7 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "d885b3b1-59e1-4284-adc1-725f0fb36b3c")
+	)
+	(pad "6" smd rect
+		(at -3.25 -5.3)
+		(size 0.7 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "2ca673a0-9b93-4b06-b155-39b8a65c631b")
+	)
+	(pad "7" smd rect
+		(at -4.35 -5.3)
+		(size 0.7 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "51e06aa8-6469-4bf1-98af-ca2e41c74c54")
+	)
+	(pad "8" smd rect
+		(at -5.449824 -5.3)
+		(size 0.7 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "8287a44e-67c7-437e-ad52-13585216d475")
+	)
+	(pad "10" smd rect
+		(at -7.75 -4.3)
+		(size 1.2 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "ee9be654-6c1f-462f-a6be-b38e47fe757f")
+	)
+	(pad "11" smd rect
+		(at -7.75 5.3)
+		(size 1.2 2.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "83e2a02d-ce5b-4bd4-8907-6aeb0917cb10")
+	)
+	(pad "12" smd rect
+		(at 7.75 5.3)
+		(size 1.2 2.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "16f2ad6f-cb4d-4022-beb4-cd4dc89b7927")
+	)
+	(pad "13" smd rect
+		(at 6.850126 -4.3)
+		(size 1.6 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "f9478e4d-248c-4e6b-99ea-d3dc45ffaf41")
+	)
+	(pad "CD" smd rect
+		(at -6.55 -5.3)
+		(size 0.7 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "49a35931-e3c0-400f-a4a7-1770086a9c82")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/CORE.3dshapes/TF_PUSH.wrl"
+		(offset
+			(xyz 0 -2.35 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)
