@@ -5,6 +5,165 @@
 	(uuid "08743e8b-e8a5-46b3-afc8-26ce4ba521c0")
 	(paper "A4")
 	(lib_symbols
+		(symbol "CORE:IPEX1"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 4.318 10.922 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "IPEX1"
+				(at 4.572 8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "CORE:KH-IPEX-K501-29"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121237_Shenzhen-Kinghelm-Elec-KH-IPEX-K501-29_C411563.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "ANT-SMD_KH-IPEX-K501-29 C411563 KH-IPEX-K501-29 Shenzhen Kinghelm Elec"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "IPEX1_0_1"
+				(rectangle
+					(start 0 0)
+					(end 12.7 -12.7)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "IPEX1_1_1"
+				(pin input line
+					(at 15.24 -6.35 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 6.35 -15.24 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 6.35 2.54 270)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -2.54 -6.35 0)
+					(length 2.54)
+					(name "SIG"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:Conn_01x04_Socket"
 			(pin_names
 				(offset 1.016)
@@ -255,154 +414,6 @@
 					(at -5.08 -5.08 0)
 					(length 3.81)
 					(name "Pin_4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Counter:IPEX1"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at 4.318 10.922 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "IPEX1"
-				(at 4.572 8.89 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Counter:JLC_IPEX-1"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "IPEX1_0_1"
-				(rectangle
-					(start 0 0)
-					(end 12.7 -12.7)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "IPEX1_1_1"
-				(pin input line
-					(at 15.24 -6.35 180)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 6.35 -15.24 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 6.35 2.54 270)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -2.54 -6.35 0)
-					(length 2.54)
-					(name "SIG"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2125,91 +2136,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Counter:IPEX1")
-		(at 237.49 66.04 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "025152ee-ffbf-4f0a-9005-f75168b3a7f6")
-		(property "Reference" "U11"
-			(at 226.568 52.324 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "IPEX1"
-			(at 235.712 52.324 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Counter:JLC_IPEX-1"
-			(at 237.49 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 237.49 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 237.49 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "7863906d-2c0c-45c4-bb5d-1ab48c5b430f")
-		)
-		(pin "4"
-			(uuid "006be1c0-d12f-4a5d-abc0-4083b2fbba90")
-		)
-		(pin "1"
-			(uuid "0c8855b7-f8d6-44e5-9b7e-4c7ea41ddcbe")
-		)
-		(pin "2"
-			(uuid "f4b69da3-2bad-4ddd-b295-59817e81fb57")
-		)
-		(instances
-			(project "CORE_Rev1.0"
-				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
-					(reference "U11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 86.36 175.26 0)
 		(unit 1)
@@ -2368,91 +2294,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Counter:IPEX1")
-		(at 180.34 91.44 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "041567b7-15e8-4514-80e3-6dfe012c5cd4")
-		(property "Reference" "U15"
-			(at 169.418 77.724 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "IPEX1"
-			(at 178.562 77.724 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Counter:JLC_IPEX-1"
-			(at 180.34 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 180.34 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 180.34 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "ed93a344-36a5-4819-8ba3-aa4cd1a208b1")
-		)
-		(pin "4"
-			(uuid "f8d284a5-4e8c-4ce3-96e7-d99118c895cc")
-		)
-		(pin "1"
-			(uuid "2e0ac7d0-818c-4ac1-8655-8af0e82193b2")
-		)
-		(pin "2"
-			(uuid "a4c83561-54fe-47ae-a974-2cfc9bc11eba")
-		)
-		(instances
-			(project "CORE_Rev1.0"
-				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
-					(reference "U15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 95.25 142.24 90)
 		(unit 1)
@@ -2532,8 +2373,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Counter:IPEX1")
-		(at 237.49 91.44 180)
+		(lib_id "CORE:IPEX1")
+		(at 44.45 60.96 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2541,9 +2382,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "06c3862f-8df0-4fa3-9f4c-e550a6914d6c")
-		(property "Reference" "U16"
-			(at 226.568 77.724 0)
+		(uuid "06b1e22b-bc3e-46c9-b802-6be895015ea6")
+		(property "Reference" "U8"
+			(at 32.766 43.688 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2553,7 +2394,7 @@
 			)
 		)
 		(property "Value" "IPEX1"
-			(at 235.712 77.724 0)
+			(at 32.766 46.228 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2562,8 +2403,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Counter:JLC_IPEX-1"
-			(at 237.49 91.44 0)
+		(property "Footprint" "CORE:KH-IPEX-K501-29"
+			(at 44.45 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2573,8 +2414,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 237.49 91.44 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121237_Shenzhen-Kinghelm-Elec-KH-IPEX-K501-29_C411563.pdf"
+			(at 44.45 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2585,7 +2426,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 237.49 91.44 0)
+			(at 44.45 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2595,107 +2436,22 @@
 				)
 			)
 		)
-		(pin "3"
-			(uuid "afc24618-6265-493a-9d0f-9057d76b9dd1")
+		(pin "1"
+			(uuid "8ac9fbd1-8773-43d5-9f16-14347d1faafa")
 		)
 		(pin "4"
-			(uuid "c25ffaa4-f0eb-4549-a625-fefa6845410d")
+			(uuid "2d69d717-aff5-4ebb-b464-9e24e75d276d")
 		)
-		(pin "1"
-			(uuid "64b77550-84fe-4205-841b-b8430fbba904")
+		(pin "3"
+			(uuid "5b24e9fc-3433-444e-ab4f-451f50afb45e")
 		)
 		(pin "2"
-			(uuid "7062cbf1-9a84-4234-82d6-4406bf1bd9ec")
+			(uuid "7d5322ba-eb4e-4bb6-8fc5-2f57de4177c2")
 		)
 		(instances
 			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
-					(reference "U16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Counter:IPEX1")
-		(at 180.34 66.04 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "078e2494-1f47-4edb-bcae-da25613e7462")
-		(property "Reference" "U10"
-			(at 169.418 52.324 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "IPEX1"
-			(at 178.562 52.324 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Counter:JLC_IPEX-1"
-			(at 180.34 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 180.34 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 180.34 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "76adfb5f-c67b-4d63-89b5-162b7864a2aa")
-		)
-		(pin "4"
-			(uuid "078db4e0-8da7-42ba-98d6-f5a03376b0b0")
-		)
-		(pin "1"
-			(uuid "2c146b64-ce45-487c-802d-6d2ccde4a5ca")
-		)
-		(pin "2"
-			(uuid "afa82456-9ab0-484c-80b0-40a6e54edc39")
-		)
-		(instances
-			(project "CORE_Rev1.0"
-				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
-					(reference "U10")
+					(reference "U8")
 					(unit 1)
 				)
 			)
@@ -2860,6 +2616,91 @@
 		)
 	)
 	(symbol
+		(lib_id "CORE:IPEX1")
+		(at 44.45 36.83 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0f7bd806-a5fa-4745-85de-6fab6b68476d")
+		(property "Reference" "U4"
+			(at 32.766 19.558 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "IPEX1"
+			(at 32.766 22.098 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CORE:KH-IPEX-K501-29"
+			(at 44.45 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121237_Shenzhen-Kinghelm-Elec-KH-IPEX-K501-29_C411563.pdf"
+			(at 44.45 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 44.45 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d2cf895e-655e-408e-b9f4-008328b86cd7")
+		)
+		(pin "4"
+			(uuid "6477b819-3a23-4ade-a9ac-4c6532ddaec4")
+		)
+		(pin "3"
+			(uuid "6f089494-eaf3-4130-8e9e-a67ab7b42f00")
+		)
+		(pin "2"
+			(uuid "7876704a-ab28-4e16-a5fc-1f24d97780aa")
+		)
+		(instances
+			(project "CORE_Rev1.0"
+				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
+					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 38.1 63.5 90)
 		(unit 1)
@@ -2933,6 +2774,91 @@
 			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
 					(reference "#PWR0107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CORE:IPEX1")
+		(at 101.6 85.09 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "17e953a2-b36e-4d8a-8117-b343c8db9855")
+		(property "Reference" "U11"
+			(at 89.916 67.818 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "IPEX1"
+			(at 89.916 70.358 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CORE:KH-IPEX-K501-29"
+			(at 101.6 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121237_Shenzhen-Kinghelm-Elec-KH-IPEX-K501-29_C411563.pdf"
+			(at 101.6 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 101.6 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f3abaa02-433d-4dd7-9136-ed0cb1fb5e2f")
+		)
+		(pin "4"
+			(uuid "a1e4a645-a1c9-4d47-9c29-5876ad4e568a")
+		)
+		(pin "3"
+			(uuid "84b79e74-1d79-4a73-b4e9-06d9346218f1")
+		)
+		(pin "2"
+			(uuid "1fd31081-e462-401b-842e-680c358c79d2")
+		)
+		(instances
+			(project "CORE_Rev1.0"
+				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
+					(reference "U11")
 					(unit 1)
 				)
 			)
@@ -3334,8 +3260,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Counter:IPEX1")
-		(at 44.45 36.83 180)
+		(lib_id "CORE:IPEX1")
+		(at 44.45 133.35 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3343,9 +3269,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "2d823b56-f05c-4ba2-bbe4-4d1173e49567")
-		(property "Reference" "U8"
-			(at 33.528 23.114 0)
+		(uuid "3036324d-42df-4ae6-a8fa-0349f580729e")
+		(property "Reference" "U14"
+			(at 32.766 116.078 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3355,7 +3281,7 @@
 			)
 		)
 		(property "Value" "IPEX1"
-			(at 42.672 23.114 0)
+			(at 32.766 118.618 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3364,8 +3290,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Counter:JLC_IPEX-1"
-			(at 44.45 36.83 0)
+		(property "Footprint" "CORE:KH-IPEX-K501-29"
+			(at 44.45 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3375,8 +3301,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 44.45 36.83 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121237_Shenzhen-Kinghelm-Elec-KH-IPEX-K501-29_C411563.pdf"
+			(at 44.45 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3387,7 +3313,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 44.45 36.83 0)
+			(at 44.45 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3397,107 +3323,22 @@
 				)
 			)
 		)
-		(pin "3"
-			(uuid "437eba08-46f1-4c69-ab1c-dae53f3cd89d")
+		(pin "1"
+			(uuid "9f0e5e05-6453-4d6b-9161-fa775913c1eb")
 		)
 		(pin "4"
-			(uuid "831383c6-db4c-41a2-8ecf-9c47f0cc28d1")
+			(uuid "5c78e5db-f48e-42e1-b42e-ebffd45812d7")
 		)
-		(pin "1"
-			(uuid "900d7fc3-19d3-49a6-b711-eaf3269dc4b5")
+		(pin "3"
+			(uuid "805cebe6-6aab-4699-b0a0-cbbf1e700bb5")
 		)
 		(pin "2"
-			(uuid "de31ba80-027f-47fd-94a1-bbfe62fa8e0d")
+			(uuid "80a340e2-b279-4ebd-a6b1-7ebb3f4607cb")
 		)
 		(instances
 			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
-					(reference "U8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Counter:IPEX1")
-		(at 44.45 109.22 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2dcf551a-4b4e-4016-90db-d1d70aec1063")
-		(property "Reference" "U21"
-			(at 33.528 95.504 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "IPEX1"
-			(at 42.672 95.504 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Counter:JLC_IPEX-1"
-			(at 44.45 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 44.45 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 44.45 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "6ebddcbb-bca7-4503-b86e-dbda51fc8ba5")
-		)
-		(pin "4"
-			(uuid "b449e775-57fb-472b-bba2-65558721dee2")
-		)
-		(pin "1"
-			(uuid "408ff329-7d03-4595-86a1-c547704dda9e")
-		)
-		(pin "2"
-			(uuid "44d3be1f-70e6-4a7c-9084-28f165f7c4a5")
-		)
-		(instances
-			(project "CORE_Rev1.0"
-				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
-					(reference "U21")
+					(reference "U14")
 					(unit 1)
 				)
 			)
@@ -3662,6 +3503,91 @@
 		)
 	)
 	(symbol
+		(lib_id "CORE:IPEX1")
+		(at 44.45 85.09 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "34a0efb1-e7cf-4f18-939f-90cf0a37ddc6")
+		(property "Reference" "U10"
+			(at 32.766 67.818 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "IPEX1"
+			(at 32.766 70.358 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CORE:KH-IPEX-K501-29"
+			(at 44.45 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121237_Shenzhen-Kinghelm-Elec-KH-IPEX-K501-29_C411563.pdf"
+			(at 44.45 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 44.45 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cd5bd67c-188c-4e75-a101-0b785dfe6f17")
+		)
+		(pin "4"
+			(uuid "dfc020b5-beee-44c2-a72e-d38daa26d538")
+		)
+		(pin "3"
+			(uuid "45dae00f-aeff-41db-b4a4-03d674c5e357")
+		)
+		(pin "2"
+			(uuid "1f05bdcb-e9e0-45b5-8b50-757b0a36c3b6")
+		)
+		(instances
+			(project "CORE_Rev1.0"
+				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
+					(reference "U10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 86.36 78.74 0)
 		(unit 1)
@@ -3741,6 +3667,91 @@
 		)
 	)
 	(symbol
+		(lib_id "CORE:IPEX1")
+		(at 101.6 60.96 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3a8a3661-5046-400b-affc-2e7c7a24f108")
+		(property "Reference" "U9"
+			(at 89.916 43.688 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "IPEX1"
+			(at 89.916 46.228 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CORE:KH-IPEX-K501-29"
+			(at 101.6 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121237_Shenzhen-Kinghelm-Elec-KH-IPEX-K501-29_C411563.pdf"
+			(at 101.6 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 101.6 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e96ab944-1d7e-44e7-8c3d-df233660a688")
+		)
+		(pin "4"
+			(uuid "19c42666-a267-44f9-b4b1-40062f02f17a")
+		)
+		(pin "3"
+			(uuid "0a5dd5db-590c-4f18-8bb5-4cb13620ed38")
+		)
+		(pin "2"
+			(uuid "a6af7e71-9027-4580-a9b2-64f497b08b78")
+		)
+		(instances
+			(project "CORE_Rev1.0"
+				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
+					(reference "U9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 173.99 109.22 90)
 		(unit 1)
@@ -3814,6 +3825,91 @@
 			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
 					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CORE:IPEX1")
+		(at 44.45 109.22 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3e625296-be3f-4df2-932a-bf8e57d05588")
+		(property "Reference" "U12"
+			(at 32.766 91.948 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "IPEX1"
+			(at 32.766 94.488 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CORE:KH-IPEX-K501-29"
+			(at 44.45 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121237_Shenzhen-Kinghelm-Elec-KH-IPEX-K501-29_C411563.pdf"
+			(at 44.45 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 44.45 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2673006f-9ce4-454a-afec-2ea89e59092f")
+		)
+		(pin "4"
+			(uuid "e734fdce-4980-456b-8ef8-ca28ce074599")
+		)
+		(pin "3"
+			(uuid "d2566296-209f-468c-aa2e-ad0179f0e5ea")
+		)
+		(pin "2"
+			(uuid "190f3525-e0bc-46dd-884a-00464e788378")
+		)
+		(instances
+			(project "CORE_Rev1.0"
+				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
+					(reference "U12")
 					(unit 1)
 				)
 			)
@@ -4051,91 +4147,6 @@
 			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
 					(reference "#PWR0103")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Counter:IPEX1")
-		(at 44.45 157.48 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4baab434-588b-487d-b3c3-a6065cee58b9")
-		(property "Reference" "U25"
-			(at 33.528 143.764 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "IPEX1"
-			(at 42.672 143.764 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Counter:JLC_IPEX-1"
-			(at 44.45 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 44.45 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 44.45 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "6c57a6db-fe40-4142-b605-76ef79eb80ca")
-		)
-		(pin "4"
-			(uuid "33a5f27a-ceaa-4c73-a0a1-1f3ae3331e63")
-		)
-		(pin "1"
-			(uuid "b5633dd9-a377-4f99-856e-9079fb6b3870")
-		)
-		(pin "2"
-			(uuid "71b7a97b-4de8-4b1e-964d-84dbaae5096a")
-		)
-		(instances
-			(project "CORE_Rev1.0"
-				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
-					(reference "U25")
 					(unit 1)
 				)
 			)
@@ -4531,6 +4542,91 @@
 			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
 					(reference "#PWR0100")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CORE:IPEX1")
+		(at 101.6 181.61 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "577df3ab-ec01-431d-b4f9-273833e7ccd9")
+		(property "Reference" "U19"
+			(at 89.916 164.338 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "IPEX1"
+			(at 89.916 166.878 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CORE:KH-IPEX-K501-29"
+			(at 101.6 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121237_Shenzhen-Kinghelm-Elec-KH-IPEX-K501-29_C411563.pdf"
+			(at 101.6 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 101.6 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9570149d-f60a-4706-9d00-e23e8836108b")
+		)
+		(pin "4"
+			(uuid "3af7e7d1-8ecf-427f-9f22-9062f7dd613f")
+		)
+		(pin "3"
+			(uuid "d18d72d1-7704-4f34-96a5-b169fbf58f77")
+		)
+		(pin "2"
+			(uuid "50877f99-d4ff-447b-9871-abfa7a0bd209")
+		)
+		(instances
+			(project "CORE_Rev1.0"
+				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
+					(reference "U19")
 					(unit 1)
 				)
 			)
@@ -5011,6 +5107,91 @@
 		)
 	)
 	(symbol
+		(lib_id "CORE:IPEX1")
+		(at 180.34 66.04 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7108e711-9e72-4e7e-89ce-95fa614658a0")
+		(property "Reference" "U22"
+			(at 168.656 48.768 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "IPEX1"
+			(at 168.656 51.308 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CORE:KH-IPEX-K501-29"
+			(at 180.34 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121237_Shenzhen-Kinghelm-Elec-KH-IPEX-K501-29_C411563.pdf"
+			(at 180.34 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 180.34 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "edff05d7-c802-4d92-b628-b1dccb29a22a")
+		)
+		(pin "4"
+			(uuid "59ca9e38-30d2-4d01-a07a-ae8751d73d8c")
+		)
+		(pin "3"
+			(uuid "5a3e0ded-982b-45e2-831d-38308590f27b")
+		)
+		(pin "2"
+			(uuid "9d09421e-840d-457c-9fc9-586f31c6a461")
+		)
+		(instances
+			(project "CORE_Rev1.0"
+				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
+					(reference "U22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 173.99 68.58 90)
 		(unit 1)
@@ -5248,6 +5429,91 @@
 		)
 	)
 	(symbol
+		(lib_id "CORE:IPEX1")
+		(at 44.45 181.61 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "77c9aa31-6505-4156-8b7c-72c6046a36a3")
+		(property "Reference" "U18"
+			(at 32.766 164.338 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "IPEX1"
+			(at 32.766 166.878 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CORE:KH-IPEX-K501-29"
+			(at 44.45 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121237_Shenzhen-Kinghelm-Elec-KH-IPEX-K501-29_C411563.pdf"
+			(at 44.45 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 44.45 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f1e0914e-4111-470a-a9b6-d91a6fafe2af")
+		)
+		(pin "4"
+			(uuid "8dcf376c-83c9-4549-88fc-b89b68997e7a")
+		)
+		(pin "3"
+			(uuid "99cebf24-2d3b-4639-a64d-0a0950466e00")
+		)
+		(pin "2"
+			(uuid "2c0e28f7-6f41-4e8d-b261-dfb8b71e70a2")
+		)
+		(instances
+			(project "CORE_Rev1.0"
+				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
+					(reference "U18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 173.99 16.51 90)
 		(unit 1)
@@ -5321,91 +5587,6 @@
 			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
 					(reference "#PWR080")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Counter:IPEX1")
-		(at 237.49 31.75 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "8551a989-1836-4641-9ec4-78de1b825e06")
-		(property "Reference" "U14"
-			(at 226.568 18.034 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "IPEX1"
-			(at 235.712 18.034 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Counter:JLC_IPEX-1"
-			(at 237.49 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 237.49 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 237.49 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "730b1c72-77af-4555-a2a6-e5aa1efc0f2d")
-		)
-		(pin "4"
-			(uuid "97cb3f96-0e9d-4976-9649-c3a6eefc6654")
-		)
-		(pin "1"
-			(uuid "47ee912a-7e7d-495f-aad8-755671d428a6")
-		)
-		(pin "2"
-			(uuid "818c72fc-d661-41de-9200-dc974d6159aa")
-		)
-		(instances
-			(project "CORE_Rev1.0"
-				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
-					(reference "U14")
 					(unit 1)
 				)
 			)
@@ -5570,6 +5751,91 @@
 		)
 	)
 	(symbol
+		(lib_id "CORE:IPEX1")
+		(at 180.34 91.44 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "86f3ff42-a9be-4160-9e00-4237311360e5")
+		(property "Reference" "U24"
+			(at 168.656 74.168 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "IPEX1"
+			(at 168.656 76.708 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CORE:KH-IPEX-K501-29"
+			(at 180.34 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121237_Shenzhen-Kinghelm-Elec-KH-IPEX-K501-29_C411563.pdf"
+			(at 180.34 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 180.34 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cd73d1de-43f9-4a31-b312-e859c9edb95d")
+		)
+		(pin "4"
+			(uuid "19158bf8-8258-401d-8fc3-07091c55d538")
+		)
+		(pin "3"
+			(uuid "2537db39-8372-4204-92c1-4114e513bdd5")
+		)
+		(pin "2"
+			(uuid "b14454f9-8a7e-472c-a340-c8ae00e3b04d")
+		)
+		(instances
+			(project "CORE_Rev1.0"
+				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
+					(reference "U24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 173.99 34.29 90)
 		(unit 1)
@@ -5649,8 +5915,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Counter:IPEX1")
-		(at 44.45 85.09 180)
+		(lib_id "CORE:IPEX1")
+		(at 101.6 109.22 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5658,9 +5924,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "8bf9d72a-bfad-4238-8f60-3a21d75afd73")
-		(property "Reference" "U19"
-			(at 33.528 71.374 0)
+		(uuid "8c3c569c-e8cb-46fc-b458-869ca76959dd")
+		(property "Reference" "U13"
+			(at 89.916 91.948 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5670,7 +5936,7 @@
 			)
 		)
 		(property "Value" "IPEX1"
-			(at 42.672 71.374 0)
+			(at 89.916 94.488 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5679,8 +5945,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Counter:JLC_IPEX-1"
-			(at 44.45 85.09 0)
+		(property "Footprint" "CORE:KH-IPEX-K501-29"
+			(at 101.6 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5690,8 +5956,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 44.45 85.09 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121237_Shenzhen-Kinghelm-Elec-KH-IPEX-K501-29_C411563.pdf"
+			(at 101.6 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5702,7 +5968,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 44.45 85.09 0)
+			(at 101.6 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5712,22 +5978,192 @@
 				)
 			)
 		)
-		(pin "3"
-			(uuid "64f6cab8-d5a0-4e9b-b20b-2ada34268fad")
+		(pin "1"
+			(uuid "535ecb53-12fe-4da7-9fe8-d16711706357")
 		)
 		(pin "4"
-			(uuid "16886ece-32c0-4d57-ad1a-ec1c2d7fb0ff")
+			(uuid "fb891947-95a7-4724-9d69-6602732631dd")
 		)
-		(pin "1"
-			(uuid "35ec2bb5-0179-4588-a763-5b667fe82801")
+		(pin "3"
+			(uuid "cd13f227-a0e7-44b2-bfdf-5603461c7fba")
 		)
 		(pin "2"
-			(uuid "dfd81b91-84e8-4ae0-bf3a-ffb5cc8c5b94")
+			(uuid "317d3000-4e37-42d4-8a48-2439dd554cfb")
 		)
 		(instances
 			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
-					(reference "U19")
+					(reference "U13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CORE:IPEX1")
+		(at 180.34 124.46 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8da88f12-5f4b-4bf1-9360-ef473276e608")
+		(property "Reference" "U26"
+			(at 168.656 107.188 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "IPEX1"
+			(at 168.656 109.728 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CORE:KH-IPEX-K501-29"
+			(at 180.34 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121237_Shenzhen-Kinghelm-Elec-KH-IPEX-K501-29_C411563.pdf"
+			(at 180.34 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 180.34 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "031c200b-77a3-46dc-8f62-d6fc3f52fbbf")
+		)
+		(pin "4"
+			(uuid "ca83ec5b-c03a-49ea-838f-c14ab3e58deb")
+		)
+		(pin "3"
+			(uuid "96cbd139-703b-4d60-9f9f-3e6cfd5019ef")
+		)
+		(pin "2"
+			(uuid "b0f70280-b8ee-40a8-ab65-d3f27b3ddd18")
+		)
+		(instances
+			(project "CORE_Rev1.0"
+				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
+					(reference "U26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CORE:IPEX1")
+		(at 237.49 91.44 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8e058b0c-8112-4514-8165-dc6725e9e274")
+		(property "Reference" "U25"
+			(at 225.806 74.168 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "IPEX1"
+			(at 225.806 76.708 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CORE:KH-IPEX-K501-29"
+			(at 237.49 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121237_Shenzhen-Kinghelm-Elec-KH-IPEX-K501-29_C411563.pdf"
+			(at 237.49 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 237.49 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "640bacba-9b85-4765-a326-cf14b5af252d")
+		)
+		(pin "4"
+			(uuid "edf0872a-41f3-478f-852d-aac937dc528b")
+		)
+		(pin "3"
+			(uuid "f448980a-c1a1-4712-867e-aa3d13c66d94")
+		)
+		(pin "2"
+			(uuid "af01fc9f-0369-4ee6-a4da-5437f1fe15a6")
+		)
+		(instances
+			(project "CORE_Rev1.0"
+				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
+					(reference "U25")
 					(unit 1)
 				)
 			)
@@ -5892,91 +6328,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Counter:IPEX1")
-		(at 44.45 133.35 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "9193f975-c57d-4d46-8c4d-d659cc11d18d")
-		(property "Reference" "U23"
-			(at 33.528 119.634 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "IPEX1"
-			(at 42.672 119.634 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Counter:JLC_IPEX-1"
-			(at 44.45 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 44.45 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 44.45 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "59f0c7da-0099-4778-aa20-3770953f0839")
-		)
-		(pin "4"
-			(uuid "903a1689-68e9-49c1-9bf2-b91f67917051")
-		)
-		(pin "1"
-			(uuid "f343f73b-4ae9-4d64-9e6d-d37a7794e3f1")
-		)
-		(pin "2"
-			(uuid "b87ca933-63c8-4a2d-a9cc-3a099b8771ad")
-		)
-		(instances
-			(project "CORE_Rev1.0"
-				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
-					(reference "U23")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 38.1 39.37 90)
 		(unit 1)
@@ -6056,8 +6407,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Counter:IPEX1")
-		(at 101.6 181.61 180)
+		(lib_id "CORE:IPEX1")
+		(at 237.49 31.75 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6065,9 +6416,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "94073681-df8f-4c22-8a29-1f424688c727")
-		(property "Reference" "U28"
-			(at 90.678 167.894 0)
+		(uuid "9b0a0df5-5572-413b-88f9-a0e6317b9017")
+		(property "Reference" "U21"
+			(at 225.806 14.478 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6077,7 +6428,7 @@
 			)
 		)
 		(property "Value" "IPEX1"
-			(at 99.822 167.894 0)
+			(at 225.806 17.018 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6086,8 +6437,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Counter:JLC_IPEX-1"
-			(at 101.6 181.61 0)
+		(property "Footprint" "CORE:KH-IPEX-K501-29"
+			(at 237.49 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6097,8 +6448,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 101.6 181.61 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121237_Shenzhen-Kinghelm-Elec-KH-IPEX-K501-29_C411563.pdf"
+			(at 237.49 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6109,7 +6460,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 101.6 181.61 0)
+			(at 237.49 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6119,107 +6470,22 @@
 				)
 			)
 		)
-		(pin "3"
-			(uuid "3e4163ee-c2d7-4298-bcaa-a3b9115d78fe")
+		(pin "1"
+			(uuid "1c9238e1-b953-4550-8e5b-9cc5eae4a31d")
 		)
 		(pin "4"
-			(uuid "47119f74-d743-4430-874b-a37d333f5e22")
+			(uuid "81882846-7b6e-4638-b82a-703b06af2f5a")
 		)
-		(pin "1"
-			(uuid "451cd052-c0fa-42c9-8910-40646b6392e5")
+		(pin "3"
+			(uuid "c800860e-ac7e-42f3-b521-ffcb11e23551")
 		)
 		(pin "2"
-			(uuid "666f5f2f-85fd-4e79-a7cd-1d7fd72b44b5")
+			(uuid "54c793bc-3809-4f50-8662-a2c2f96f2fe8")
 		)
 		(instances
 			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
-					(reference "U28")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Counter:IPEX1")
-		(at 44.45 60.96 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "9913db47-0a1a-4af7-94ff-0db8876f85ae")
-		(property "Reference" "U17"
-			(at 33.528 47.244 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "IPEX1"
-			(at 42.672 47.244 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Counter:JLC_IPEX-1"
-			(at 44.45 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 44.45 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 44.45 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "f85856dc-0621-4d09-b63b-e010a68b8294")
-		)
-		(pin "4"
-			(uuid "2113733f-1b7f-4cd0-b0a3-fdce6ac0228e")
-		)
-		(pin "1"
-			(uuid "39bb4c35-3d83-4772-92af-1e1bb823d030")
-		)
-		(pin "2"
-			(uuid "e625e4e1-2f37-45ea-87f0-a604f1101fc9")
-		)
-		(instances
-			(project "CORE_Rev1.0"
-				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
-					(reference "U17")
+					(reference "U21")
 					(unit 1)
 				)
 			)
@@ -6700,8 +6966,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Counter:IPEX1")
-		(at 101.6 36.83 180)
+		(lib_id "CORE:IPEX1")
+		(at 180.34 31.75 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6709,9 +6975,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "b7dd0e62-2b5a-4e27-a55b-5ecf07ce62e6")
-		(property "Reference" "U9"
-			(at 90.678 23.114 0)
+		(uuid "b51d945f-c1a1-45df-8b58-4e26eb68d33a")
+		(property "Reference" "U20"
+			(at 168.656 14.478 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6721,7 +6987,7 @@
 			)
 		)
 		(property "Value" "IPEX1"
-			(at 99.822 23.114 0)
+			(at 168.656 17.018 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6730,8 +6996,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Counter:JLC_IPEX-1"
-			(at 101.6 36.83 0)
+		(property "Footprint" "CORE:KH-IPEX-K501-29"
+			(at 180.34 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6741,8 +7007,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 101.6 36.83 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121237_Shenzhen-Kinghelm-Elec-KH-IPEX-K501-29_C411563.pdf"
+			(at 180.34 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6753,7 +7019,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 101.6 36.83 0)
+			(at 180.34 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6763,22 +7029,107 @@
 				)
 			)
 		)
-		(pin "3"
-			(uuid "d64f7ff5-1a79-4bd3-bd47-79570bb69835")
+		(pin "1"
+			(uuid "b3798857-5ab2-4798-a92d-7beb79778418")
 		)
 		(pin "4"
-			(uuid "9df4d398-3bc6-4784-98da-ac4c7ded1368")
+			(uuid "711fc2be-1069-4287-a334-eb488184a6fe")
 		)
-		(pin "1"
-			(uuid "8d80398d-8793-42a5-8b47-b1a97d969264")
+		(pin "3"
+			(uuid "ff09784b-64c3-4d9b-a8a1-7c06982ed351")
 		)
 		(pin "2"
-			(uuid "d9844c1b-feb1-49cc-93e3-4ea2845e1418")
+			(uuid "7f0d9282-bf99-4d22-9c07-a949add5eeba")
 		)
 		(instances
 			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
-					(reference "U9")
+					(reference "U20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CORE:IPEX1")
+		(at 237.49 66.04 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bbf782ba-7b05-45e3-b051-9df9f66a4b7a")
+		(property "Reference" "U23"
+			(at 225.806 48.768 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "IPEX1"
+			(at 225.806 51.308 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CORE:KH-IPEX-K501-29"
+			(at 237.49 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121237_Shenzhen-Kinghelm-Elec-KH-IPEX-K501-29_C411563.pdf"
+			(at 237.49 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 237.49 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b614b03f-a8bf-45ee-8a31-648a0edda83b")
+		)
+		(pin "4"
+			(uuid "ad636cc6-0d32-4878-bd56-369e835cdf2a")
+		)
+		(pin "3"
+			(uuid "107e6b55-7604-47a3-9e1a-8f24a53b2b44")
+		)
+		(pin "2"
+			(uuid "9b6ba77b-10ed-4422-ab39-029766239866")
+		)
+		(instances
+			(project "CORE_Rev1.0"
+				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
+					(reference "U23")
 					(unit 1)
 				)
 			)
@@ -7022,91 +7373,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Counter:IPEX1")
-		(at 101.6 109.22 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c0201775-a85c-47ff-96c3-ae54ae495069")
-		(property "Reference" "U22"
-			(at 90.678 95.504 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "IPEX1"
-			(at 99.822 95.504 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Counter:JLC_IPEX-1"
-			(at 101.6 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 101.6 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 101.6 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "3bd0547c-6a73-4d16-9329-3cd154514a39")
-		)
-		(pin "4"
-			(uuid "53663e41-6907-4bc7-84ba-e850f7c60281")
-		)
-		(pin "1"
-			(uuid "fd62b3a7-c4f7-4e30-afc4-4ad2c564da1d")
-		)
-		(pin "2"
-			(uuid "afda06e0-e09b-4a39-9773-576f6cff163b")
-		)
-		(instances
-			(project "CORE_Rev1.0"
-				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
-					(reference "U22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 95.25 69.85 90)
 		(unit 1)
@@ -7180,6 +7446,176 @@
 			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
 					(reference "#PWR0115")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CORE:IPEX1")
+		(at 101.6 157.48 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c2737785-ff8c-4f8e-b0fd-23261bba899a")
+		(property "Reference" "U17"
+			(at 89.916 140.208 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "IPEX1"
+			(at 89.916 142.748 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CORE:KH-IPEX-K501-29"
+			(at 101.6 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121237_Shenzhen-Kinghelm-Elec-KH-IPEX-K501-29_C411563.pdf"
+			(at 101.6 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 101.6 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dcd2cfbb-aadc-4a27-be22-d06599b4d00a")
+		)
+		(pin "4"
+			(uuid "5f1d34fd-6e9a-4d8b-a723-2eff4857fd27")
+		)
+		(pin "3"
+			(uuid "9964151b-a2ad-4cf4-8508-b03bf25aa5ce")
+		)
+		(pin "2"
+			(uuid "ab531ccf-5765-49c9-ad8f-80b59e7589de")
+		)
+		(instances
+			(project "CORE_Rev1.0"
+				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
+					(reference "U17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CORE:IPEX1")
+		(at 44.45 157.48 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c2e3d826-8c1d-4f31-a03f-167b000f6fa7")
+		(property "Reference" "U16"
+			(at 32.766 140.208 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "IPEX1"
+			(at 32.766 142.748 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CORE:KH-IPEX-K501-29"
+			(at 44.45 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121237_Shenzhen-Kinghelm-Elec-KH-IPEX-K501-29_C411563.pdf"
+			(at 44.45 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 44.45 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bf9f0bc7-5784-4509-a0b5-c79c4f0e26fe")
+		)
+		(pin "4"
+			(uuid "25a9b824-d51b-4899-bc55-04e0edd922a3")
+		)
+		(pin "3"
+			(uuid "410ff2eb-bbc1-4c96-bff7-8fcc17c8fbc2")
+		)
+		(pin "2"
+			(uuid "98b921da-b4b1-4bb5-8daf-18fa31531b5b")
+		)
+		(instances
+			(project "CORE_Rev1.0"
+				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
+					(reference "U16")
 					(unit 1)
 				)
 			)
@@ -7496,91 +7932,6 @@
 			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
 					(reference "#PWR0137")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Counter:IPEX1")
-		(at 180.34 124.46 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "cde60e84-dd6c-494f-b46f-3d95ad348f9e")
-		(property "Reference" "U4"
-			(at 169.418 110.744 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "IPEX1"
-			(at 178.562 110.744 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Counter:JLC_IPEX-1"
-			(at 180.34 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 180.34 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 180.34 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "7ea22488-cf7d-40f0-9f0d-b4acb35b4530")
-		)
-		(pin "4"
-			(uuid "d166da3c-e17d-441b-8a04-049f01d7bddb")
-		)
-		(pin "1"
-			(uuid "87b6c8ec-e156-4cef-acf8-686302061b77")
-		)
-		(pin "2"
-			(uuid "10712966-c352-43f8-82bb-5abea7eb543d")
-		)
-		(instances
-			(project "CORE_Rev1.0"
-				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
-					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -7990,91 +8341,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Counter:IPEX1")
-		(at 180.34 31.75 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "dd887a47-c5f7-42db-a3e7-d03ada49a570")
-		(property "Reference" "U13"
-			(at 169.418 18.034 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "IPEX1"
-			(at 178.562 18.034 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Counter:JLC_IPEX-1"
-			(at 180.34 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 180.34 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 180.34 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "f93c3b68-d0fa-4fc7-9a25-fbd36447dbb2")
-		)
-		(pin "4"
-			(uuid "d89a8b99-b4bb-410a-a648-4913c22a002e")
-		)
-		(pin "1"
-			(uuid "c338cbda-e5d5-465d-a639-5b929b090096")
-		)
-		(pin "2"
-			(uuid "311308d7-f1a7-4687-8146-ace8699fc915")
-		)
-		(instances
-			(project "CORE_Rev1.0"
-				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
-					(reference "U13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 95.25 87.63 90)
 		(unit 1)
@@ -8312,91 +8578,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Counter:IPEX1")
-		(at 101.6 157.48 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e5fb2a6b-46cc-449f-9535-96b5106b3568")
-		(property "Reference" "U26"
-			(at 90.678 143.764 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "IPEX1"
-			(at 99.822 143.764 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Counter:JLC_IPEX-1"
-			(at 101.6 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 101.6 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 101.6 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "794ed92c-c26f-4454-b910-91188a9def67")
-		)
-		(pin "4"
-			(uuid "5c177a41-6d39-4150-9cc0-193b1439ae9a")
-		)
-		(pin "1"
-			(uuid "fe7ba118-0ec5-4a10-b76e-6e8257f8bd93")
-		)
-		(pin "2"
-			(uuid "416e56b9-94a6-448e-bdfe-7b33d2669564")
-		)
-		(instances
-			(project "CORE_Rev1.0"
-				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
-					(reference "U26")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
 		(at 257.81 144.78 0)
 		(unit 1)
@@ -8554,6 +8735,91 @@
 		)
 	)
 	(symbol
+		(lib_id "CORE:IPEX1")
+		(at 101.6 133.35 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ecd259b7-808b-41f7-869f-093b2d91d33a")
+		(property "Reference" "U15"
+			(at 89.916 116.078 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "IPEX1"
+			(at 89.916 118.618 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CORE:KH-IPEX-K501-29"
+			(at 101.6 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121237_Shenzhen-Kinghelm-Elec-KH-IPEX-K501-29_C411563.pdf"
+			(at 101.6 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 101.6 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8bf433ac-81cc-4bc7-a66c-70b23fa4c994")
+		)
+		(pin "4"
+			(uuid "533a43c8-a2c3-4154-a0a5-c0829945b983")
+		)
+		(pin "3"
+			(uuid "1900e11d-7301-491b-a71e-81e1617833ba")
+		)
+		(pin "2"
+			(uuid "12306743-20a7-47e4-b5a5-b47ca1ff01f5")
+		)
+		(instances
+			(project "CORE_Rev1.0"
+				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
+					(reference "U15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 38.1 69.85 90)
 		(unit 1)
@@ -8627,91 +8893,6 @@
 			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
 					(reference "#PWR0112")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Counter:IPEX1")
-		(at 101.6 85.09 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ed76ab9b-d2cf-4198-9147-4954f2a880b0")
-		(property "Reference" "U20"
-			(at 90.678 71.374 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "IPEX1"
-			(at 99.822 71.374 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Counter:JLC_IPEX-1"
-			(at 101.6 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 101.6 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 101.6 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "72b1f838-ed3c-4496-b076-03b4d5bb6cc4")
-		)
-		(pin "4"
-			(uuid "a3fc0f06-19c9-4c05-9474-b20d615bbb17")
-		)
-		(pin "1"
-			(uuid "eedd2adb-5ee1-4533-bb63-5b0948760090")
-		)
-		(pin "2"
-			(uuid "d2e659ae-31d8-495d-abed-c4dc503286e1")
-		)
-		(instances
-			(project "CORE_Rev1.0"
-				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
-					(reference "U20")
 					(unit 1)
 				)
 			)
@@ -8876,91 +9057,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Counter:IPEX1")
-		(at 44.45 181.61 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "f399a61b-3b9a-4251-a7a3-31bb9892f167")
-		(property "Reference" "U27"
-			(at 33.528 167.894 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "IPEX1"
-			(at 42.672 167.894 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Counter:JLC_IPEX-1"
-			(at 44.45 181.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 44.45 181.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 44.45 181.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "6384586b-74af-4b3b-8fa1-d7b251794c54")
-		)
-		(pin "4"
-			(uuid "71d7888d-9d17-4c6c-adec-25c5264345ed")
-		)
-		(pin "1"
-			(uuid "c0355282-4512-4777-8dfa-6e11aa44267c")
-		)
-		(pin "2"
-			(uuid "0a91c670-a056-4866-bc0c-4c5ea3b81ea0")
-		)
-		(instances
-			(project "CORE_Rev1.0"
-				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
-					(reference "U27")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 38.1 160.02 90)
 		(unit 1)
@@ -9040,8 +9136,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Counter:IPEX1")
-		(at 101.6 60.96 180)
+		(lib_id "CORE:IPEX1")
+		(at 101.6 36.83 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9049,9 +9145,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "f6bcd978-018d-429e-8769-5099737f386e")
-		(property "Reference" "U18"
-			(at 90.678 47.244 0)
+		(uuid "f4f5c6ba-3130-4b5f-8327-503760f33958")
+		(property "Reference" "U7"
+			(at 89.916 19.558 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9061,7 +9157,7 @@
 			)
 		)
 		(property "Value" "IPEX1"
-			(at 99.822 47.244 0)
+			(at 89.916 22.098 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9070,8 +9166,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Counter:JLC_IPEX-1"
-			(at 101.6 60.96 0)
+		(property "Footprint" "CORE:KH-IPEX-K501-29"
+			(at 101.6 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9081,8 +9177,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 101.6 60.96 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121237_Shenzhen-Kinghelm-Elec-KH-IPEX-K501-29_C411563.pdf"
+			(at 101.6 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9093,7 +9189,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 101.6 60.96 0)
+			(at 101.6 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9103,107 +9199,22 @@
 				)
 			)
 		)
-		(pin "3"
-			(uuid "cfc624c7-1164-46e4-a27a-d4b9d4354713")
+		(pin "1"
+			(uuid "33cee11e-1142-4a68-849e-6f3bbc16fd21")
 		)
 		(pin "4"
-			(uuid "5888fbd7-60da-47c9-bdff-f763ffe51884")
+			(uuid "ac181ab0-2932-4855-b1c7-1f99fe7b612e")
 		)
-		(pin "1"
-			(uuid "a7509832-49dd-4b6f-a769-0591e1cc5117")
+		(pin "3"
+			(uuid "0a98a8ec-dfec-4197-a435-034c425ad822")
 		)
 		(pin "2"
-			(uuid "3308e0eb-6584-4721-95ff-3ca3782cbaa5")
+			(uuid "5da00e24-5684-40e3-83f1-d2f7fff74fd5")
 		)
 		(instances
 			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
-					(reference "U18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Counter:IPEX1")
-		(at 101.6 133.35 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "f70e839d-91c4-4330-89ef-d3d62cfb6878")
-		(property "Reference" "U24"
-			(at 90.678 119.634 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "IPEX1"
-			(at 99.822 119.634 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Counter:JLC_IPEX-1"
-			(at 101.6 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 101.6 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 101.6 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "8da0202d-130d-4d9b-88dc-850203df36cf")
-		)
-		(pin "4"
-			(uuid "1258bae5-9d43-4401-939a-ac0112c33d15")
-		)
-		(pin "1"
-			(uuid "8f49e53d-a270-4557-8b7a-850133dd2abe")
-		)
-		(pin "2"
-			(uuid "1fb2c2d0-390a-403f-b970-578bccb5186f")
-		)
-		(instances
-			(project "CORE_Rev1.0"
-				(path "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2"
-					(reference "U24")
+					(reference "U7")
 					(unit 1)
 				)
 			)
