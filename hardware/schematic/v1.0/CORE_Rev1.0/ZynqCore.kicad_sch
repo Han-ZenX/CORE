@@ -3959,121 +3959,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:PWR_FLAG"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#FLG"
-				(at 0 1.905 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "PWR_FLAG"
-				(at 0 3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Special symbol for telling ERC where power comes from"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "flag power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "PWR_FLAG_0_0"
-				(pin power_out line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "PWR_FLAG_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(text "MRCC B13_L13_N"
 		(exclude_from_sim no)
@@ -6952,12 +6837,6 @@
 		(uuid "ff697f08-423b-42d9-8c4f-8c66304097e1")
 	)
 	(junction
-		(at 124.46 30.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0781f49f-f50c-4b5a-a581-f455ef2ed08a")
-	)
-	(junction
 		(at 139.7 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7084,16 +6963,52 @@
 		(uuid "ff631ce4-6910-4edc-be90-9ca6b6bc9f78")
 	)
 	(no_connect
+		(at 62.23 120.65)
+		(uuid "0274d9cc-5915-4a01-bb8a-767bc8761382")
+	)
+	(no_connect
+		(at 62.23 115.57)
+		(uuid "089dcb5e-4703-4279-bdca-6f344ff2bfce")
+	)
+	(no_connect
 		(at 163.83 82.55)
 		(uuid "0c6d7170-6ba7-45f9-a84a-e57034295e3f")
+	)
+	(no_connect
+		(at 163.83 120.65)
+		(uuid "0de44f98-644e-4f13-b2dd-5dd18aec03b2")
+	)
+	(no_connect
+		(at 119.38 46.99)
+		(uuid "0e781bb0-4d02-438d-a5e9-ed18a227395c")
 	)
 	(no_connect
 		(at 77.47 41.91)
 		(uuid "0f399912-757d-4c38-8f5e-8644d9f1f026")
 	)
 	(no_connect
+		(at 62.23 135.89)
+		(uuid "1c6b82a2-0cac-46dd-b8d7-c3cc59a2cea7")
+	)
+	(no_connect
+		(at 163.83 110.49)
+		(uuid "27263772-ec21-4e7d-8bea-8f32a45cd16b")
+	)
+	(no_connect
+		(at 223.52 115.57)
+		(uuid "2b10b84e-8e2c-4f09-901f-88d03593a25e")
+	)
+	(no_connect
+		(at 119.38 138.43)
+		(uuid "2e3a22e5-1784-4e0f-a58f-15fd7282ef1b")
+	)
+	(no_connect
 		(at 223.52 77.47)
 		(uuid "338c80d8-1464-49a5-822e-7dad70ccc115")
+	)
+	(no_connect
+		(at 223.52 120.65)
+		(uuid "376701fc-64c1-4902-9847-b4b5f2524aac")
 	)
 	(no_connect
 		(at 223.52 59.69)
@@ -7102,6 +7017,14 @@
 	(no_connect
 		(at 163.83 90.17)
 		(uuid "38724495-8d27-4d2e-a079-5fe022fbf8dc")
+	)
+	(no_connect
+		(at 119.38 120.65)
+		(uuid "3aa5b491-e504-42ad-96f1-ca9083641ce3")
+	)
+	(no_connect
+		(at 62.23 110.49)
+		(uuid "3b56f6c2-90a0-4b22-a036-ada3f1bc0e98")
 	)
 	(no_connect
 		(at 223.52 69.85)
@@ -7120,8 +7043,16 @@
 		(uuid "422386c7-9e4c-4703-af93-b7ab95a05427")
 	)
 	(no_connect
+		(at 62.23 133.35)
+		(uuid "432139c4-6ee3-4422-95ae-5223b6c204a7")
+	)
+	(no_connect
 		(at 163.83 74.93)
 		(uuid "43cfb83d-cf15-44e8-8224-cc5d7efa603c")
+	)
+	(no_connect
+		(at 119.38 130.81)
+		(uuid "466b3197-be4a-442b-8087-8e48fcef56a0")
 	)
 	(no_connect
 		(at 163.83 57.15)
@@ -7132,48 +7063,156 @@
 		(uuid "481e554b-0971-466b-b94e-bb8689f28bda")
 	)
 	(no_connect
+		(at 119.38 107.95)
+		(uuid "4b06a026-e495-4a80-b262-b341d1fd1f5f")
+	)
+	(no_connect
+		(at 119.38 123.19)
+		(uuid "4c964990-2e35-45bb-9010-e0825685c609")
+	)
+	(no_connect
+		(at 163.83 113.03)
+		(uuid "513a8336-671a-40a0-9e36-27d862763b0d")
+	)
+	(no_connect
+		(at 62.23 138.43)
+		(uuid "521788b7-ed87-4ec2-a3f8-971f978428cb")
+	)
+	(no_connect
 		(at 163.83 87.63)
 		(uuid "5492963f-6b44-400c-9ad8-82f48b2b0070")
+	)
+	(no_connect
+		(at 223.52 118.11)
+		(uuid "58e79234-34ad-4aae-8625-ec630bd89d43")
 	)
 	(no_connect
 		(at 223.52 67.31)
 		(uuid "5e36b580-df51-4275-b516-80070a99e38b")
 	)
 	(no_connect
+		(at 119.38 125.73)
+		(uuid "64bf844c-8cb8-43f7-8192-c8be1558c9a4")
+	)
+	(no_connect
+		(at 62.23 125.73)
+		(uuid "6cfe5725-0dfd-4cce-82c1-027f1472f511")
+	)
+	(no_connect
 		(at 62.23 44.45)
 		(uuid "705dab6c-f97e-4d09-a7bf-12e043bba101")
+	)
+	(no_connect
+		(at 119.38 140.97)
+		(uuid "7101ef6c-94d4-489e-876a-9afce05de6b2")
 	)
 	(no_connect
 		(at 223.52 49.53)
 		(uuid "74cf3558-3a89-414d-b5ca-2b1a518bdd34")
 	)
 	(no_connect
+		(at 119.38 115.57)
+		(uuid "76b85de1-5bff-46bb-b418-e885839c011f")
+	)
+	(no_connect
 		(at 223.52 80.01)
 		(uuid "7bef9b69-9fdd-4495-9cd8-484ef816c45a")
+	)
+	(no_connect
+		(at 119.38 118.11)
+		(uuid "7fd4b83f-c914-4324-822a-71bff2fc76fb")
 	)
 	(no_connect
 		(at 163.83 97.79)
 		(uuid "829905ac-7f8f-4dd9-ba0c-b1889791148f")
 	)
 	(no_connect
+		(at 223.52 125.73)
+		(uuid "839c6c54-9ea8-4981-9a2a-0994f2eb7503")
+	)
+	(no_connect
 		(at 163.83 49.53)
 		(uuid "910493a3-5ffe-4d6b-aa70-61c3d5374556")
+	)
+	(no_connect
+		(at 62.23 140.97)
+		(uuid "98ba6f72-154a-4a06-99c2-6f1516f511d4")
+	)
+	(no_connect
+		(at 119.38 113.03)
+		(uuid "9b353f31-a1b1-4379-a7de-28618e3b5c58")
 	)
 	(no_connect
 		(at 105.41 146.05)
 		(uuid "9e8e51e3-a6a4-40a1-bda3-d631828e9af3")
 	)
 	(no_connect
+		(at 62.23 123.19)
+		(uuid "a34212ea-0ed5-4edc-a633-30611b6f01e4")
+	)
+	(no_connect
+		(at 119.38 49.53)
+		(uuid "a604a500-747f-4383-9119-0b463ea2943d")
+	)
+	(no_connect
+		(at 62.23 128.27)
+		(uuid "a82cfe0f-9882-440e-a670-51c9998c249d")
+	)
+	(no_connect
+		(at 62.23 130.81)
+		(uuid "aa0f0ccc-c4bb-49f6-a918-9132d128db2b")
+	)
+	(no_connect
 		(at 163.83 67.31)
 		(uuid "b0957b63-09ca-4a2a-a773-d770fa4742cc")
+	)
+	(no_connect
+		(at 119.38 52.07)
+		(uuid "b2b1fe72-da51-4a37-a741-8976fc1b51bf")
+	)
+	(no_connect
+		(at 62.23 113.03)
+		(uuid "b441334b-805c-4718-9cfb-d0279b35f095")
+	)
+	(no_connect
+		(at 163.83 115.57)
+		(uuid "b9ef8059-a5c4-460c-8750-8bfc480a8fb0")
+	)
+	(no_connect
+		(at 119.38 143.51)
+		(uuid "bd22241d-2224-4ddf-b678-bf0c803b7da9")
+	)
+	(no_connect
+		(at 62.23 143.51)
+		(uuid "bd927d37-768a-410d-a399-f393d58f2940")
+	)
+	(no_connect
+		(at 119.38 57.15)
+		(uuid "c27b9105-eb2e-467c-af91-70d63da70458")
 	)
 	(no_connect
 		(at 163.83 59.69)
 		(uuid "cd604016-7ab8-4b9c-9b3a-d73c5ca3f883")
 	)
 	(no_connect
+		(at 223.52 123.19)
+		(uuid "cdd6dc0f-0373-4a7d-93d6-e45143cef0cf")
+	)
+	(no_connect
 		(at 62.23 57.15)
 		(uuid "d00f034b-42a1-4bd6-9515-874c7bdeeb08")
+	)
+	(no_connect
+		(at 119.38 59.69)
+		(uuid "d1985663-3347-4992-a1cd-84b8325e855b")
+	)
+	(no_connect
+		(at 119.38 110.49)
+		(uuid "d2c7796a-00f4-44b9-b6a3-9c1776bfa216")
+	)
+	(no_connect
+		(at 119.38 44.45)
+		(uuid "e0510bd1-f99f-4556-946a-be82405dbfb0")
 	)
 	(no_connect
 		(at 163.83 69.85)
@@ -7186,6 +7225,10 @@
 	(no_connect
 		(at 223.52 46.99)
 		(uuid "ec2e4dbb-c6a7-4603-a42a-d791de12cb4a")
+	)
+	(no_connect
+		(at 163.83 123.19)
+		(uuid "f2dc694b-fa84-4cc0-b39b-e3f857e205c2")
 	)
 	(no_connect
 		(at 105.41 41.91)
@@ -8368,16 +8411,6 @@
 			(type default)
 		)
 		(uuid "830e8aa8-bd07-455e-be0e-4f1bb3725c48")
-	)
-	(wire
-		(pts
-			(xy 124.46 30.48) (xy 128.27 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "831ae98a-9437-4c27-8c5b-1700e9b76f08")
 	)
 	(wire
 		(pts
@@ -11517,85 +11550,6 @@
 			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/dc06706b-2a1f-4563-9d3e-c912c4088a0d"
 					(reference "M1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 128.27 30.48 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "85e6a74e-b339-4216-a044-e17354d79dee")
-		(property "Reference" "#FLG03"
-			(at 130.175 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 132.08 30.4799 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 128.27 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 128.27 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 128.27 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "864a808b-4756-4cee-aaf2-7a6ae9aa5f83")
-		)
-		(instances
-			(project "CORE_Rev1.0"
-				(path "/c7438a17-8217-4925-98df-f8ca6801320f/dc06706b-2a1f-4563-9d3e-c912c4088a0d"
-					(reference "#FLG03")
 					(unit 1)
 				)
 			)
