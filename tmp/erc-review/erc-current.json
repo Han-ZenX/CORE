@@ -1,0 +1,258 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-05T09:32:44",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.4",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/c7438a17-8217-4925-98df-f8ca6801320f",
+            "violations": [
+                {
+                    "description": "未连接的连线端点",
+                    "items": [
+                        {
+                            "description": "水平线, 长度 0.1143 mm",
+                            "pos": {
+                                "x": 0.7366,
+                                "y": 0.5842
+                            },
+                            "uuid": "b56ea5d5-88d8-498d-9e19-edd7fcc93787"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "unconnected_wire_endpoint"
+                },
+                {
+                    "description": "未连接的连线端点",
+                    "items": [
+                        {
+                            "description": "水平线, 长度 0.0889 mm",
+                            "pos": {
+                                "x": 1.1176,
+                                "y": 0.5461
+                            },
+                            "uuid": "c0070011-e844-4dff-8e1c-833f496f2235"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "unconnected_wire_endpoint"
+                },
+                {
+                    "description": "符号 'FPC-40' 与来源库 'CORE' 中的符号存在差异",
+                    "items": [
+                        {
+                            "description": "符号 RGB TFTLCD1 [FPC-40]",
+                            "pos": {
+                                "x": 1.2065,
+                                "y": 0.5207
+                            },
+                            "uuid": "acda526f-8659-4eb4-bbce-8ec9636b331f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "符号 '93LC56BT-I_OT' 与来源库 'JLCImport' 中的符号存在差异",
+                    "items": [
+                        {
+                            "description": "符号 U6 [93LC56BT-I_OT]",
+                            "pos": {
+                                "x": 0.7747,
+                                "y": 1.5621
+                            },
+                            "uuid": "86411040-9b0a-4654-b8c3-501ad41c096f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "符号 'X322512MSB4SI' 与来源库 'JLCImport' 中的符号存在差异",
+                    "items": [
+                        {
+                            "description": "符号 X1 [X322512MSB4SI]",
+                            "pos": {
+                                "x": 0.8382,
+                                "y": 1.8161
+                            },
+                            "uuid": "3b89d633-90c8-421c-8236-10c5a02d1589"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "符号 'TPS78633' 与来源库 'Counter' 中的符号存在差异",
+                    "items": [
+                        {
+                            "description": "符号 U2 [TPS78633]",
+                            "pos": {
+                                "x": 0.3556,
+                                "y": 0.2921
+                            },
+                            "uuid": "840d0358-d160-4911-bdc7-4cca2a57ad85"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "在库 'JLCImport' 中找不到封装 'LAIL-PHC2_54-2P-01-XH-L'",
+                    "items": [
+                        {
+                            "description": "符号 CN1 [LAIL-PHC2_54-2P-01-XH-L]",
+                            "pos": {
+                                "x": 1.3081,
+                                "y": 1.0033
+                            },
+                            "uuid": "188dd232-a03d-488f-8f7c-5f1ab2ec3999"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "在库 'JLCImport' 中找不到封装 'BSMD1206C-1300T'",
+                    "items": [
+                        {
+                            "description": "符号 F2 [BSMD1206C-1300T]",
+                            "pos": {
+                                "x": 2.0193,
+                                "y": 0.9906
+                            },
+                            "uuid": "3a46b664-3634-4aec-a08f-283ceec7fbc1"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                }
+            ]
+        },
+        {
+            "path": "/ZynqCore/",
+            "uuid_path": "/c7438a17-8217-4925-98df-f8ca6801320f/dc06706b-2a1f-4563-9d3e-c912c4088a0d",
+            "violations": []
+        },
+        {
+            "path": "/Comm_Periph/",
+            "uuid_path": "/c7438a17-8217-4925-98df-f8ca6801320f/1b8e51b9-1252-4123-a6f3-43015d792c26",
+            "violations": []
+        },
+        {
+            "path": "/Storage/",
+            "uuid_path": "/c7438a17-8217-4925-98df-f8ca6801320f/fdf79855-6d79-4c6b-a13f-b1d7a6b217b6",
+            "violations": []
+        },
+        {
+            "path": "/Display/",
+            "uuid_path": "/c7438a17-8217-4925-98df-f8ca6801320f/f61d5a97-b8cb-48b7-b2d8-b1ec9597c5e7",
+            "violations": [
+                {
+                    "description": "类型为 Unspecified 和 Passive 的引脚已连接",
+                    "items": [
+                        {
+                            "description": "Symbol Q1 引脚 1 [G, Unspecified, Line]",
+                            "pos": {
+                                "x": 0.5334,
+                                "y": 0.6731
+                            },
+                            "uuid": "f79f5c52-cc14-4d58-8f21-1495a7118f3d"
+                        },
+                        {
+                            "description": "Symbol R25 引脚 2 [Passive, Line]",
+                            "pos": {
+                                "x": 0.4445,
+                                "y": 0.6731
+                            },
+                            "uuid": "a5b4d3dc-8075-4e36-b325-9716486300f4"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "类型为 Unspecified 和 Passive 的引脚已连接",
+                    "items": [
+                        {
+                            "description": "Symbol Q1 引脚 3 [D, Unspecified, Line]",
+                            "pos": {
+                                "x": 0.6096,
+                                "y": 0.6223
+                            },
+                            "uuid": "67b667c1-bb36-4037-893b-4129d1045bd7"
+                        },
+                        {
+                            "description": "Symbol R26 引脚 1 [Passive, Line]",
+                            "pos": {
+                                "x": 0.6604,
+                                "y": 0.5842
+                            },
+                            "uuid": "331cb599-d289-4071-a3f9-dfd011ad10cb"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "类型为 Unspecified 和 Power input 的引脚已连接",
+                    "items": [
+                        {
+                            "description": "Symbol Q1 引脚 2 [S, Unspecified, Line]",
+                            "pos": {
+                                "x": 0.6096,
+                                "y": 0.7239
+                            },
+                            "uuid": "3dfb432b-1af8-44fd-be8c-557499624666"
+                        },
+                        {
+                            "description": "Symbol #PWR095 引脚 1 [Power input, Line]",
+                            "pos": {
+                                "x": 0.6096,
+                                "y": 0.762
+                            },
+                            "uuid": "60dd3163-bd0e-4e07-9c76-7519bbc367b3"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                }
+            ]
+        },
+        {
+            "path": "/Signal/",
+            "uuid_path": "/c7438a17-8217-4925-98df-f8ca6801320f/2f34e19c-e857-4703-b785-07db28ca5ce2",
+            "violations": []
+        },
+        {
+            "path": "/Power/",
+            "uuid_path": "/c7438a17-8217-4925-98df-f8ca6801320f/ed50b6be-780b-4dc6-b2ce-f6e75d9c68ad",
+            "violations": []
+        }
+    ],
+    "source": "CORE_Rev1.0.kicad_sch"
+}

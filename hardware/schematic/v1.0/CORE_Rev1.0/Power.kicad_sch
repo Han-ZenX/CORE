@@ -2291,12 +2291,6 @@
 		(uuid "1462d40f-67fd-44d0-b732-6f8ec79dd8fe")
 	)
 	(junction
-		(at 91.44 107.95)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "14ed0db8-cf26-48ff-82ba-f470f36c663d")
-	)
-	(junction
 		(at 213.36 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2397,12 +2391,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c5f0d4f5-8f11-418f-b9e8-3f262a0034c9")
-	)
-	(junction
-		(at 91.44 97.79)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "db30d305-eade-402b-87b2-8d6b2b86349b")
 	)
 	(junction
 		(at 72.39 33.02)
@@ -2513,16 +2501,6 @@
 			(type default)
 		)
 		(uuid "0a5cf3f5-0f0e-4ce2-826b-126d0037a5ac")
-	)
-	(wire
-		(pts
-			(xy 91.44 97.79) (xy 99.06 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0d2088ff-8a33-4b19-a08c-75e2c75f0cf1")
 	)
 	(wire
 		(pts
@@ -2666,16 +2644,6 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 105.41) (xy 99.06 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "26d05019-2fb3-4279-95d7-07d10d5bfcda")
-	)
-	(wire
-		(pts
 			(xy 127 43.18) (xy 127 44.45)
 		)
 		(stroke
@@ -2743,16 +2711,6 @@
 			(type default)
 		)
 		(uuid "360e5a5c-9ef2-428d-9d2b-92c3cbea7e54")
-	)
-	(wire
-		(pts
-			(xy 91.44 107.95) (xy 83.82 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "36c66afa-bd6e-4e7f-8e55-d5f72c1cd3e3")
 	)
 	(wire
 		(pts
@@ -2833,16 +2791,6 @@
 			(type default)
 		)
 		(uuid "4edfde1b-366c-4258-84fc-2f4df5cc6550")
-	)
-	(wire
-		(pts
-			(xy 99.06 107.95) (xy 91.44 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "50c9c88b-7655-4beb-a13c-a70992a645fe")
 	)
 	(wire
 		(pts
@@ -3283,26 +3231,6 @@
 			(type default)
 		)
 		(uuid "e03b7e86-8e6c-4e04-a6d7-0700371bec17")
-	)
-	(wire
-		(pts
-			(xy 91.44 97.79) (xy 83.82 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e436fba4-2eda-473c-9228-c093136b4045")
-	)
-	(wire
-		(pts
-			(xy 91.44 105.41) (xy 91.44 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e8bcd1b1-db07-4b2a-83e2-7f6b3f82639e")
 	)
 	(wire
 		(pts
@@ -6441,7 +6369,7 @@
 				)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "4.7uF"
 			(at 85.598 105.664 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6894,85 +6822,6 @@
 		)
 	)
 	(symbol
-		(lib_id "CORE:C")
-		(at 99.06 101.6 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b514a450-81fa-48e5-ae8d-b5d849375c60")
-		(property "Reference" "C11"
-			(at 101.092 98.806 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100nF"
-			(at 100.838 105.664 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "CORE:C_0402_1005Metric"
-			(at 100.0252 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 99.06 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 99.06 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "36b8c5c0-7baa-49ce-9083-82816deaa46c")
-		)
-		(pin "2"
-			(uuid "47ed56d5-76a0-45fd-b06a-5e318862dce8")
-		)
-		(instances
-			(project "CORE_Rev1.0"
-				(path "/c7438a17-8217-4925-98df-f8ca6801320f/ed50b6be-780b-4dc6-b2ce-f6e75d9c68ad"
-					(reference "C11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 40.64 50.8 0)
 		(unit 1)
@@ -7125,85 +6974,6 @@
 			(project "CORE_Rev1.0"
 				(path "/c7438a17-8217-4925-98df-f8ca6801320f/ed50b6be-780b-4dc6-b2ce-f6e75d9c68ad"
 					(reference "#FLG01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "CORE:C")
-		(at 91.44 101.6 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "cb613518-a5a6-41f0-ac8d-b780a319e207")
-		(property "Reference" "C12"
-			(at 93.472 98.806 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10uF"
-			(at 93.218 105.664 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "CORE:C_0603_1608Metric"
-			(at 92.4052 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 91.44 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 91.44 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "69aa459d-a27d-4dab-8789-0fdb2620a4ea")
-		)
-		(pin "2"
-			(uuid "bc85893e-1497-4377-be59-8519419adc0d")
-		)
-		(instances
-			(project "CORE_Rev1.0"
-				(path "/c7438a17-8217-4925-98df-f8ca6801320f/ed50b6be-780b-4dc6-b2ce-f6e75d9c68ad"
-					(reference "C12")
 					(unit 1)
 				)
 			)
